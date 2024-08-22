@@ -1,0 +1,75 @@
+
+
+.rdc-page {
+    .page-banner{
+        @extend %section-space;
+        p:last-child{
+            margin-bottom: 0px;
+        }
+    }
+
+    .page-section{
+        @extend %section-space-bottom;
+        .item{
+            p:last-child{
+                margin-bottom: 0px;
+            }
+        }
+
+        .book.item{
+            overflow: hidden;
+            clear: both;
+            margin-bottom: 20px;
+            background: #F5F5F5;
+            border-radius: 6px;
+            .book-cover{
+                width: 30%;
+                float: left;
+                margin-right: 12px;
+                @include media-breakpoint-down(md) {
+                    width: 35%;
+                }
+                @include media-breakpoint-between(md, lg) { 
+                    width: 40%;
+                }
+                img{
+                    width: 100%;
+                    border-radius: 6px;
+                }
+            }
+            .book-info {
+                padding: 15px;
+                a{
+                    color: $title-text-color;
+                }
+            }
+        }
+
+        .course.item{
+            background: #F5F5F5;
+            border-radius: 6px;
+            margin-bottom: 20px;
+            .course-cover{
+                img{
+                    width: 100%;
+                    border-radius: 6px;
+                }
+            }
+            .course-info {
+                padding: 15px;
+                a{
+                    color: $title-text-color;
+                }
+                .tags{
+                    span{
+                        background: #fff;
+                        padding: 2px 4px;
+                        font-size: 12px;
+                        font-weight: 600;
+                    }
+                }
+            }
+        }
+
+    }
+} 

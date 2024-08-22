@@ -1,0 +1,37 @@
+// All breakpoints
+$grid-breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px,
+  xxl: 1400px,
+);
+
+// @media (min-width: 0) { ... }
+// @include media-breakpoint-down(up) { ... }
+// @media (max-width: 0) { ... }
+// @include media-breakpoint-down(md) { ... }
+// @media (max-width: 0) { ... }
+// @include media-breakpoint-between(md, lg) { ... }
+
+
+@include media-breakpoint-down(md) {
+  .hide-sm {
+    display: none;
+  }
+}
+@include media-breakpoint-up(md) {
+  .hide-lg {
+    display: none!important;
+  }
+}
+@include media-breakpoint-down(md) {
+  .mob-order {
+    order: -1;
+  }
+  .hide-sm {
+    display: none !important;
+  }
+
+}

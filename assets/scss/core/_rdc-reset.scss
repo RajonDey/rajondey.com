@@ -1,0 +1,63 @@
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+*:focus {
+outline: none !important;
+}
+
+html,
+body {
+height: 100%;
+margin: auto !important;
+-webkit-font-smoothing: antialiased;
+width: 100%;
+word-wrap: break-word;
+@extend %body-font;
+} 
+
+img {
+max-width: 100%;
+border: none;
+height: auto;
+}
+
+ul, li{
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+}
+
+// for WordPress dashboard default p tags
+// div:empty,
+p:empty {
+display: none;
+} 
+
+// for WordPress dashboard default br tags
+// br {
+// display: none;
+// }
+
+.transition,
+%transition {
+-webkit-transition: all 0.9s ease 0s;
+-moz-transition: all 0.9s ease 0s;
+-ms-transition: all 0.9s ease 0s;
+-o-transition: all 0.9s ease 0s;
+transition: all 0.9s ease 0s;
+}
+
+button:hover, a:hover, i:hover, button, a, i {
+text-decoration: none;
+cursor: pointer;
+@extend %transition;
+}
+a:active {
+text-decoration: none !important;
+}
+select:focus, a:focus, textarea:focus, input:focus {
+outline: 0;
+}

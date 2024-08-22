@@ -1,0 +1,176 @@
+
+
+.rdc-home{
+    .intro{
+        @extend %body-bigfont;
+        padding: 70px 0px;
+        @include media-breakpoint-down(lg) {
+            text-align: center;
+            .section-title{
+                padding-bottom: 0px;
+                margin-bottom: 10px;
+                &::before,
+                &::after{
+                    display: none;
+                }
+            }
+        }
+        &-image{
+            img{
+                border-radius: 6px;
+            }
+            @include media-breakpoint-down(lg) {
+                order: -1;
+                padding-bottom: 20px;
+            }
+        }
+    }
+    .featured-category{
+        ul.categories{
+            padding: 0px;
+            margin: 0px;
+            li{
+                display: inline-block;
+                list-style: none;
+                width: 33%;
+                border-radius: 6px;
+                border: 1px solid #f0f0f0;
+                box-shadow: -3px 4px 7px -4px rgba(0,0,0,.12);
+                @include media-breakpoint-down(lg) {
+                    width: 32%;
+                }
+                @include media-breakpoint-down(md) {
+                    width: 100%;
+                }
+                &:hover{
+                    box-shadow: -5px 6px 9px -6px rgba(0,0,0,.12);
+                }
+                a{
+                    display: flex;
+                    width: 100%;
+                    align-items: center;
+                    justify-content: center;
+                    padding: 30px;
+                    @include media-breakpoint-down(lg) {
+                        padding: 25px;
+                    }
+                    &:hover{
+                        transform: translateY(-4px);
+                    }
+                    .icon{
+                        background-color: $primary-color;
+                        width: 50px;
+                        height: 50px;
+                        display: flex;
+                        align-items: center;
+                        border-radius: 6px;
+                        margin-right: 15px;
+                        padding: 6px;
+                    }
+                    h3{
+                        margin-bottom: 0px;
+                        color: #020202;
+                    }
+                }
+                &.life{
+                    a .icon{
+                        background-color: #D92424;
+                    }
+                }
+                &.web{
+                    a .icon{
+                        background-color: #83D5FB;
+                    }
+                }
+                &.music{
+                    a .icon{
+                        background-color: #D622C3;
+                    }
+                }
+            }
+        }
+    }
+
+    .latest-post{
+        padding: 70px 0px;
+        .single-post{
+            margin-bottom: 30px;
+            h3 a{
+                color: $title-text-color;
+                &:hover{
+                    color: $black;
+                }
+            }
+            &:last-child{
+                margin-bottom: 0px;
+                p{
+                    margin-bottom: 0px;
+                }
+            }
+        }
+    }
+
+    .featured-post{
+        padding-bottom: 70px;
+        .single-post{
+            margin-bottom: 30px;
+            h3 a{
+                color: $title-text-color;
+                &:hover{
+                    color: $black;
+                }
+            }
+            &:last-child{
+                margin-bottom: 0px;
+                p{
+                    margin-bottom: 0px;
+                }
+            }
+        }
+    }
+
+    .youtube-videos{
+        padding-bottom: 70px;
+        .video {
+            position: relative;
+            overflow: hidden;
+            width: 100%;
+            padding-top: 56.25%; /* 16:9 Aspect Ratio (divide 9 by 16 = 0.5625) */
+            @include media-breakpoint-down(md) {
+                margin-bottom: 20px;
+            }
+            .responsive-iframe {
+                position: absolute;
+                top: 0;
+                left: 0;
+                bottom: 0;
+                right: 0;
+                width: 100%;
+                height: 100%;
+                border-radius: 7px;
+            }
+        }
+        .subscribe-btn{
+            margin-top: 30px;
+            a {
+                i{
+                    color: #D92525;
+                    margin-right: 7px;
+                }
+                &:hover{
+                    i{
+                        color: #fff;
+                    }
+                }
+            }
+        }
+    }
+
+    .newsletter{
+        padding-bottom: 70px;
+        .section-title{
+            display: inline-block;
+        }
+    }
+
+}

@@ -1,0 +1,68 @@
+
+
+.rdc-aboutpage {
+    .intro{
+        @extend %section-space;
+        @include media-breakpoint-down(lg) {
+            text-align: center;
+            .section-title{
+                &::before,
+                &::after{
+                    display: none;
+                }
+            }
+        }
+        &-image{
+            img{
+                border-radius: 6px;
+            }
+            @include media-breakpoint-down(lg) {
+                padding-bottom: 20px;
+            }
+        }
+        p:last-child{
+            margin-bottom: 0px;
+        }
+        .bio{
+            position: relative;
+            .social-list{
+                position: absolute;
+                top: 5px;
+                right: 5px;
+                @include media-breakpoint-down(lg) {
+                    right: 0;
+                    left: 0;
+                    top: 40px;
+                }
+                li{
+                    display: inline-block;
+                    margin-right: 6px;
+                    a{
+                        color: $body-text-color;
+                        i {
+                            font-size: 13px;
+                            color: #2e2e2e;
+                            width: 30px;
+                            height: 30px;
+                            text-align: center;
+                            border-radius: 50%;
+                            border: 1px solid #ddd;
+                            display: inline-flex;
+                            justify-content: center;
+                            align-items: center;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .story-timeline{
+        @extend %section-space-bottom;
+    }
+    .life-style{
+        @extend %section-space-bottom;
+    }
+    .contact{
+        @extend %section-space-bottom;
+    }
+} 

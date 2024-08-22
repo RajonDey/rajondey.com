@@ -1,0 +1,98 @@
+
+
+.tool-caregory-list{
+    display: flex;
+    flex-wrap: wrap;
+    a{
+        background: #F8FAFC;
+        border-radius: 6px;
+        padding: 22px 50px;
+        font-size: 13px;
+        color: #222;
+        font-weight: 600;
+        letter-spacing: 0.4px;
+        width: 32%;
+        text-align: center;
+        margin-bottom: 10px;
+        margin-right: 12px;
+        @include media-breakpoint-down(xl) {
+            margin-right: 11px;
+        }
+        @include media-breakpoint-down(lg) {
+            padding: 22px 40px;
+            margin-right: 8px;
+        }
+        @include media-breakpoint-down(md) {
+            width: 47%;
+            padding: 22px 30px;
+        }
+        &:hover{
+            background: #fff;
+            box-shadow: 0 22.9098px 36.6557px rgba(67, 67, 67, 0.06);
+            transform: translateY(-2px);
+            transition: all ease-in-out .3s;
+        }
+    }
+}
+.tech-tools{
+    .tools-item{
+        background: #fff;
+        box-shadow: 0 22.9098px 36.6557px rgba(67, 67, 67, 0.06);
+        border-radius: 12.9822px;
+        padding: 20px;
+        margin: 0px 0px 25px;
+        position: relative;
+        padding-bottom: 60px;
+        &--img{
+            background: #F8FAFC;
+            text-align: center;
+            margin-bottom: 20px;
+            min-height: 130px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        &--desc{
+            min-height: 270px;
+        }
+        .rdc-btn{
+            margin-top: 10px;
+            position: absolute;
+            bottom: 25px;
+            &:hover{
+                transform: translateY(-2px);
+                transition: all ease-in-out .3s;
+            }
+        }
+    }  
+    .recommended-tools{
+        .tools-item{
+            padding-bottom: 20px; 
+            &--img{
+                text-align: center;
+                border-right: 1px solid #ddd;
+                padding: 0px 20px;
+                background: transparent;
+                margin-bottom: 0px;
+                min-height: auto;
+                display: block; 
+                @include media-breakpoint-down(lg) {
+                    border-right: 0px solid #ddd;
+                    margin-bottom: 30px;
+                }
+                img{
+                    margin-bottom: 25px;
+                }
+            }
+            &--desc{
+                padding: 0px 20px;
+                min-height: auto;
+            }
+            .rdc-btn{
+                position: static;
+                bottom: 25px;
+                margin-top: 0px;
+            }
+        }
+    }
+}   

@@ -1,0 +1,21 @@
+@import '../../node_modules/bootstrap/scss/bootstrap';
+@import '../../node_modules/bootstrap/scss/mixins/breakpoints';
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css");
+
+
+@import 'core/rdc-variables'; 
+@import 'core/rdc-reset';
+@import 'core/rdc-styleguide';  
+@import 'core/rdc-icons';
+@import 'core/rdc-sidebar';
+@import 'core/rdc-header'; 
+@import 'core/rdc-footer';
+@import 'core/rdc-breakpoints';
+
+@import 'pages/_page';
+@import 'pages/_homepage'; 
+@import 'pages/_aboutpage'; 
+@import 'pages/_articlespage'; 
+@import 'pages/_learnpage';
+@import 'pages/_resourcepage';
+@import 'pages/_searchpage';

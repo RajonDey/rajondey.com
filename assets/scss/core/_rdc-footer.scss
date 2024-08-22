@@ -1,0 +1,78 @@
+/*
+==================================
+    Footer section STYLING HERE
+==================================
+*/
+#footer {
+    .footer-top{
+        border-top: 6px solid #2e2e2e;	
+        padding: 40px 0px;
+        @include media-breakpoint-down(md) {
+            text-align: center;
+        }
+        .single-widget{
+            padding-left: 10%;
+            @include media-breakpoint-down(md) {
+                margin-bottom: 20px;
+                padding-left: 0px;
+            }
+            .footer-title {
+                font-size: 12px;
+                text-transform: uppercase;
+                font-weight: 700;
+                letter-spacing: 6px;
+                color: #2e2e2e;
+                padding-bottom: 20px;
+                @include media-breakpoint-down(md) {
+                    padding-bottom: 5px;
+                }
+            }
+            .rajon-sign{
+                width: 62px;
+                margin-bottom: 10px;
+            }
+
+            .footer-list p,
+            .footer-list li a{
+                font-size: 13px;
+                line-height: 22px;
+                font-weight: 400;
+                color: #666666;	
+                margin-bottom: 0px;	
+                &:hover{
+                    color: #000000;
+                }
+            }
+        }
+    }
+    .copywrite{
+        padding: 20px 0px;
+        border-top: 1px solid #dddddd;
+        p i,
+        p a{
+            color: #A2383D;
+        }
+        .social-list {
+            margin-bottom: 10px;
+            li{
+                display: inline-block;
+                margin: 0px 2px;
+                a i {
+                    font-size: 13px;
+                    color: #2e2e2e;
+                    width: 26px;
+                    height: 26px;
+                    text-align: center;
+                    border-radius: 50%;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    &:hover{
+                        background: #2e2e2e;
+                        color: #ffffff;	
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,45 @@
+
+
+.rdc-search-page{
+    @extend %section-space;
+    .search-items{
+        li{
+            margin-bottom: 40px;
+            padding-bottom: 30px;
+            border-bottom: 1px solid #e0e0e0;
+            article{
+                .item-title{
+                    margin-bottom: 30px;
+                    h3{
+                        a{
+                            color: $title-text-color;
+                        }
+                    }
+                }
+                
+            }
+        }
+    }
+    .no-result{
+        margin: 50px 0px;
+        text-align: center;
+        i{
+            font-size: 60px;
+            margin-bottom: 14px;
+            color: #efefef;
+            display: block;
+        }
+        p{
+            margin-bottom: 12px;
+            font-size: 17px;
+        }
+        form.search-form{
+            margin-top: 30px;
+            i{
+                font-size: 12px;
+                display: inline;
+                margin-left: 6px;
+            }
+        }
+    }
+}
