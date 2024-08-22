@@ -24,7 +24,7 @@ get_header(); ?>
                     <img src="/wp-content/uploads/2021/07/rajon-dey.jpg" alt="Rajon" width="100%">
                 </div>
                 <div class="col-lg-8 bio">
-                    <h1 class="section-title">Hi, I'm Rajon Dey</h1>
+                    <h1 class="section-title">Hi, I'm Rajon Dey--</h1>
 
 					<p>I'm a Software Developer, my passion is crafting smart, meaningful, and professional websites that enhance the online presence of individuals and businesses, making the web a more engaging, effective, and better platform.</p>
 
