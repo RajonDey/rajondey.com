@@ -22,6 +22,6 @@ jobs:
         password: "Ma@FGC?541+143"
         port: 65002
         script: |
-          cd /public_html/wp-content/themes/rdc
+          cd /var/www/rajondey.com/public_html/wp-content/themes/rdc
           git pull origin main
           # Add any additional commands here, like clearing caches
