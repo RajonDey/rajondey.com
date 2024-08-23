@@ -17,9 +17,9 @@ jobs:
         # host: ${{ secrets.HOSTINGER_HOST }}
         # username: ${{ secrets.HOSTINGER_USERNAME }}
         # password: ${{ secrets.HOSTINGER_PASSWORD }}
-        host: 62.72.62.153
-        username: u567973076
-        password: Ma@FGC?541+143
+        host: "62.72.62.153"
+        username: "u567973076"
+        password: "Ma@FGC?541+143"
         port: 65002
         script: |
           cd /public_html/wp-content/themes/rdc
