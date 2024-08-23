@@ -3,25 +3,36 @@ name: Deploy to Hostinger
 on:
   push:
     branches:
-      - main  # or whatever your production branch is named
+      - main  # Adjust this to your main branch name
+  workflow_dispatch: 
 
 jobs:
   deploy:
     runs-on: ubuntu-latest
+    
     steps:
-    - uses: actions/checkout@v4
+    - name: Checkout code
+      uses: actions/checkout@v2
 
-    - name: Deploy to Hostinger
-      uses: appleboy/ssh-action@master
+    - name: Copy files to Hostinger
+      uses: appleboy/scp-action@master
       with:
-        # host: ${{ secrets.HOSTINGER_HOST }}
-        # username: ${{ secrets.HOSTINGER_USERNAME }}
-        # password: ${{ secrets.HOSTINGER_PASSWORD }}
-        host: "62.72.62.153"
-        username: "u567973076"
-        password: "Ma@FGC?541+143"
+        host: ${{ secrets.HOSTINGER_HOST }}
+        username: ${{ secrets.HOSTINGER_USERNAME }}
+        key: ${{ secrets.SSH_PRIVATE_KEY }}  # Ensure you have added SSH private key in secrets
+        port: 65002  # If your SSH server uses a different port, add this line (e.g., 65002)
+        source: "public_html"  # Adjust this to the directory or files you want to copy from your repo
+        target: "/var/www/rajondey.com/public_html/wp-content/themes/rdc"  # Adjust this to the destination directory on Hostinger
+
+    - name: Execute post-deployment commands on Hostinger
+      uses: appleboy/ssh-action@v1.0.3
+      with:
+        host: ${{ secrets.HOSTINGER_HOST }}
+        username: ${{ secrets.HOSTINGER_USERNAME }}
+        key: ${{secrets.SSH_PRIVATE_KEY}}
         port: 65002
-        script: |
-          cd /var/www/rajondey.com/public_html/wp-content/themes/rdc
-          git pull origin main
-          # Add any additional commands here, like clearing caches
+         script: |
+          cd /var/www/rajondey.com/public_html/wp-content/themes/rdc 
+          git pull origin main 
+          chown -R openvc:www-data /var/www/domain.com/public_html 
+          chmod -R770 /var/www/domain.com/public_html`
