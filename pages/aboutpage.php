@@ -41,27 +41,34 @@ get_header(); ?>
             <div class="row story-timeline">
                 <div class="col-md-12">
 					<h2 class="section-title">Story & timeline</h2>
-<p><span class="emoji">👨‍🎓</span> I studied Business Administration at Leading University and graduated in 2017. I completed a one-year Web Development training program at the Sylhet IT Academy.</p>
-<p><span class="emoji">🧑‍💼</span> I learned to code and started making websites in 2015 and worked as a web developer freelancer on various marketplaces. I am currently employed as a Module Lead of Pixels Pod (frontend developer team) in SJ Innovation LLC since 2019.</p>
-<p><span class="emoji">🎬</span> I create digital content over the internet - write articles and documents, create videos, and capture photos that explore the realms of the web, the rhythm of music, and the essence of life itself. In addition, I curate a biweekly newsletter where I share my deepest reflections and adventures with subscribers, taking them on a journey through my world.</p>
+<p><span class="emoji">👨‍🎓</span> <b>Education & Training:</b> Graduated in Business Administration from Leading University (2017) and completed Web Development training at Sylhet IT Academy.</p>
+<p><span class="emoji">🧑‍💼</span> <b>Career Path:</b> Started coding and freelancing in web development in 2015. Currently serving as Module Lead for the frontend team at SJ Innovation LLC since 2019.</p>
+<p><span class="emoji">🎬</span> <b>Creations:</b> Create diverse digital content—articles, videos, and photos—exploring the realms of web technology, the rhythm of music, and life's essence.</p>
+<p><span class="emoji">🎯</span> <b>Current Focus:</b> Full-time work as Module Lead at SJ Innovation LLC, developing multiple side projects, learning guitar, creating digital content, and curating a biweekly newsletter.</p>
                 </div>
             </div>
 
             <div class="row life-style">
                 <div class="col-md-12">
-					<h2 class="section-title">Lifestyle & Hobbies</h2>
-<p><span class="emoji">🎸</span> I found music is deeply connected with me somewhere, as it feels so fulfilling when I can make a small piece of music. I practice music through my most adorable guitar, which I often play with absolute passion. It makes me creative and energetic, and when my intelligence has turned against me, it helps me to calm down and focus on anything with crystal clarity.</p>
-<p><span class="emoji">🧑‍💻</span> While my profession keeps me engaged, I've discovered that coding and immersing myself in cutting-edge technologies have become my second most cherished hobby. I dedicate a significant portion of my life to the world of the web, where I constantly explore and unravel its mysteries.</p>
-<p><span class="emoji">🥤</span> I also like to do a lot of stuff like driving, traveling, reading, researching, investing, gardening, cooking, and so on, which I usually do when my time allows me to do so. In my free time, I also like to take on the role of a photographer and videographer, finding joy in capturing moments. I engage in sports like badminton, cricket, and chess, and I maintain a healthy balance with exercise, meditation, and yoga.</p>
+				<h2 class="section-title">Lifestyle & Hobbies</h2>
+<p><span class="emoji">🎸</span> <b>Music & Guitar:</b> Deeply connected to music, I find fulfillment in creating melodies. My guitar is my passion, helping me stay creative, energetic, and focused. It calms me down and brings clarity when needed.</p>
+
+<p><span class="emoji">🧑‍💻</span> <b>Tech Exploration:</b> Beyond my profession, coding and exploring cutting-edge technologies have become a cherished hobby. I dedicate significant time to unraveling the mysteries of the web, constantly learning and growing.</p>
+
+<p><span class="emoji">🌟</span> <b>Diverse Interests:</b> I enjoy driving, traveling, reading, researching, investing, gardening, and cooking when time allows. Photography and videography are creative outlets for capturing moments.</p>
+
+<p><span class="emoji">🏸</span> <b>Active Lifestyle:</b> I engage in sports like badminton, cricket, table tennis, and chess. To maintain overall well-being, I balance these activities with regular exercise, meditation, and yoga practices.</p>
                 </div>
             </div>
 
             <div class="row contact">
                 <div class="col-md-12">
                     <h2 class="section-title">Get in touch</h2>
-<p><span class="emoji">🐦</span> If you have an opinion or short query, please tweet @rajjon.dey, I will be there as soon as I can. You can send a direct messages on <a target="_blank" href="https://www.instagram.com/rajjon.dey/">Instagram</a> or <a target="_blank" href="https://www.facebook.com/rajjon.dey">Facebook</a>.</p>
-<p><span class="emoji">📨</span> If you want to share a longer thing, please do email at <a href="mailto:hello@rajondey.com">hello@rajondey.com</a>. I read all my emails regularly and reply accordingly.</p>
-<p><span class="emoji">☕️</span> I also like to meet new people in person if you have any trips to Sylhet, Bangladesh, and want to talk. I'll buy you a coffee, no questions asked. I'm generally available on weekends and weekday evenings. Drop me an email at <a href="mailto:coffee@rajondey.com">coffee@rajondey.com</a>.</p>
+<p><span class="emoji">🐦</span> <b>Social Media:</b> If you have an opinion or short query, please tweet @rajjon.dey, I will be there as soon as I can. You can send direct messages on Instagram or Facebook.</p>
+
+<p><span class="emoji">📨</span> <b>Email:</b> For longer discussions, please do email at hello@rajondey.com. I read all my emails regularly and reply accordingly.</p>
+
+<p><span class="emoji">☕️</span> <b>Meet in Person:</b> I also like to meet new people in person if you have any trips to Sylhet, Bangladesh, and want to talk. I'll buy you a coffee, no questions asked. I'm generally available on weekends and weekday evenings. Drop me an email at coffee@rajondey.com to arrange.</p>
 
                 </div>
             </div>
