@@ -15,7 +15,6 @@ $grid-breakpoints: (
 // @media (max-width: 0) { ... }
 // @include media-breakpoint-between(md, lg) { ... }
 
-
 @include media-breakpoint-down(md) {
   .hide-sm {
     display: none;
@@ -23,7 +22,7 @@ $grid-breakpoints: (
 }
 @include media-breakpoint-up(md) {
   .hide-lg {
-    display: none!important;
+    display: none !important;
   }
 }
 @include media-breakpoint-down(md) {
@@ -33,5 +32,4 @@ $grid-breakpoints: (
   .hide-sm {
     display: none !important;
   }
-
 }
