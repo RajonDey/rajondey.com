@@ -12468,8 +12468,8 @@ input[type="submit"] {
 }
 
 input[type="submit"]:hover {
-  background-color: #bd1e26;
-  background: linear-gradient(to right, #bd1e26, #EA0909);
+  background-color: #008080;
+  background: linear-gradient(to right, #007777, #008888);
   color: #ffffff;
 }
 
@@ -12485,19 +12485,20 @@ textarea {
 
 
 .rdc-btn {
-  background-color: #ddd;
-  border-color: #ddd;
-  color: #222;
+  background-color: #222;
+  border-color: transparent;
+  border: none !important;
+  color: #ffffff !important;
   padding: 6px 21px;
   display: inline-block;
   border-radius: 4px;
   font-size: 13.5px;
+  letter-spacing: 0.6px;
 }
 
 
 .rdc-btn:hover {
-  background-color: #bd1e26;
-  background: linear-gradient(to right, #bd1e26, #EA0909);
+  background-color: #008080;
   color: #ffffff;
 }
 
@@ -12508,15 +12509,15 @@ textarea {
 
 
 .rdc-btn-fill {
-  background-color: #bd1e26;
-  background: linear-gradient(to right, #bd1e26, #EA0909);
+  background-color: #008080;
+  background: linear-gradient(to right, #007777, #008888);
   color: #fff;
 }
 
 
 .rdc-btn-fill:hover {
   color: #fff;
-  background-color: #bd1e26;
+  background-color: #008080;
   background-color: linear-gradient(to right, #ea0909, #bd1e26);
 }
 
@@ -13343,6 +13344,17 @@ body.no-scroll .footer {
   font-weight: 600;
 }
 
+.rdc-home a {
+  color: #333;
+  font-weight: 600;
+  border-bottom: 0.5px dashed #dddddd;
+}
+
+.rdc-home a:hover, .rdc-home a:focus {
+  color: #020202;
+  border-bottom: 1px solid #020202;
+}
+
 .rdc-home .intro {
   padding: 70px 0px;
 }
@@ -13378,17 +13390,17 @@ body.no-scroll .footer {
 
 .rdc-home .video-container .play-button {
   position: absolute;
-  top: 50%;
-  left: 50%;
+  bottom: -10px;
+  left: 40px;
   transform: translate(-50%, -50%);
   z-index: 10;
   cursor: pointer;
 }
 
 .rdc-home .video-container .play-button i {
-  font-size: 64px;
+  font-size: 42px;
   color: white;
-  opacity: 0.8;
+  opacity: 0.5;
   transition: opacity 0.3s ease;
 }
 
@@ -13514,28 +13526,40 @@ body.no-scroll .footer {
   margin-bottom: 0px;
 }
 
-.rdc-home .all-projects .card .col-md-4 {
+.rdc-home .project-highlight {
+  padding-bottom: 70px;
+}
+
+.rdc-home .project-highlight ul {
+  padding-left: 20px !important;
+}
+
+.rdc-home .project-highlight ul li {
+  list-style: disc !important;
+}
+
+.rdc-home .project-highlight .all-projects .card .col-md-4 {
   text-align: center;
   margin: auto;
 }
 
-.rdc-home .all-projects .card .col-md-4 img {
+.rdc-home .project-highlight .all-projects .card .col-md-4 img {
   max-width: 70%;
   margin: 0 auto;
   text-align: center;
 }
 
 @media (max-width: 767.98px) {
-  .rdc-home .all-projects .card .col-md-4 img {
+  .rdc-home .project-highlight .all-projects .card .col-md-4 img {
     max-width: 50%;
   }
 }
 
-.rdc-home .all-projects .card .card-body {
+.rdc-home .project-highlight .all-projects .card .card-body {
   position: relative;
 }
 
-.rdc-home .all-projects .card .card-body .badge.badge-danger {
+.rdc-home .project-highlight .all-projects .card .card-body .badge.badge-danger {
   position: absolute;
   background: #f66666;
   right: 10px;
@@ -13585,10 +13609,9 @@ body.no-scroll .footer {
 }
 
 .rdc-home .newsletter-section {
-  background-color: #f8f9fa;
-  padding: 2rem 0;
-  border: 1px solid #e9ecef;
-  border-radius: 5px;
+  padding-bottom: 70px;
+  width: 80%;
+  margin: auto;
 }
 
 .rdc-home .newsletter-section .book-cover {

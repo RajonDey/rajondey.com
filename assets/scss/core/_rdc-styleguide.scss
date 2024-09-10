@@ -204,16 +204,18 @@ textarea {
 
 %rdc-btn,
 .rdc-btn {
-  background-color: #ddd;
-  border-color: #ddd;
-  color: #222;
+  background-color: #222;
+  border-color: transparent;
+  border: none !important;
+  color: #ffffff !important;
   padding: 6px 21px;
   display: inline-block;
   border-radius: 4px;
   font-size: 13.5px;
+  letter-spacing: 0.6px;
   &:hover {
     background-color: $primary-color;
-    background: $gradient-color;
+    // background: $gradient-color;
     color: $white;
     i {
       color: $white;

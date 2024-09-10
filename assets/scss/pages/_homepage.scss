@@ -1,4 +1,14 @@
 .rdc-home {
+  a {
+    color: #333;
+    font-weight: 600;
+    border-bottom: 0.5px dashed #dddddd;
+    &:hover,
+    &:focus {
+      color: $title-text-color;
+      border-bottom: 1px solid $title-text-color;
+    }
+  }
   .intro {
     @extend %body-bigfont;
     padding: 70px 0px;
@@ -28,15 +38,15 @@
     border-radius: 6px;
     .play-button {
       position: absolute;
-      top: 50%;
-      left: 50%;
+      bottom: -10px;
+      left: 40px;
       transform: translate(-50%, -50%);
       z-index: 10;
       cursor: pointer;
       i {
-        font-size: 64px;
+        font-size: 42px;
         color: white;
-        opacity: 0.8;
+        opacity: 0.5;
         transition: opacity 0.3s ease;
       }
       &:hover i {
@@ -154,27 +164,36 @@
     }
   }
 
-  .all-projects {
-    .card {
-      .col-md-4 {
-        text-align: center;
-        margin: auto;
-        img {
-          max-width: 70%;
-          margin: 0 auto;
+  .project-highlight {
+    padding-bottom: 70px;
+    ul {
+      padding-left: 20px !important;
+      li {
+        list-style: disc !important;
+      }
+    }
+    .all-projects {
+      .card {
+        .col-md-4 {
           text-align: center;
-          @include media-breakpoint-down(md) {
-            max-width: 50%;
+          margin: auto;
+          img {
+            max-width: 70%;
+            margin: 0 auto;
+            text-align: center;
+            @include media-breakpoint-down(md) {
+              max-width: 50%;
+            }
           }
         }
-      }
-      .card-body {
-        position: relative;
-        .badge.badge-danger {
-          position: absolute;
-          background: #f66666;
-          right: 10px;
-          top: 10px;
+        .card-body {
+          position: relative;
+          .badge.badge-danger {
+            position: absolute;
+            background: #f66666;
+            right: 10px;
+            top: 10px;
+          }
         }
       }
     }
@@ -218,11 +237,9 @@
   }
 
   .newsletter-section {
-    background-color: #f8f9fa;
-    padding: 2rem 0;
-    border: 1px solid #e9ecef;
-    border-radius: 5px;
-
+    padding-bottom: 70px;
+    width: 80%;
+    margin: auto;
     .book-cover {
       max-width: 100%;
       box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);

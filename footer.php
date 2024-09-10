@@ -12,7 +12,7 @@
 		<div class="container clearfix">
 			<div class="footer-top row">
 				<div class="col-md-4 single-widget">
-					<img alt="RD Signature" class="rajon-sign" src="<?php echo get_bloginfo( 'template_directory' ); ?>/assets/dist/images/signature-2.png"></h4>
+					<img alt="RD Signature" class="rajon-sign" src="<?php echo get_bloginfo( 'template_directory' ); ?>/assets/dist/images/logo/rd.png"></h4>
 					<div class="footer-list">
 						<p>Rajon Dey</p>
 						<p>Front-end Developer</p>

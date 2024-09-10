@@ -1,31 +1,29 @@
 // FONTS
-$font-title-thin: 'Poppins-Thin', Helvetica, Arial, sans-serif;
-$font-title-light: 'Poppins-Light', Helvetica, Arial, sans-serif;
-$font-title-regular: 'Poppins-Regular', Helvetica, Arial, sans-serif;
-$font-title-medium: 'Poppins-Medium', Helvetica, Arial, sans-serif;
-$font-title-semibold: 'Poppins-SemiBold', Helvetica, Arial, sans-serif;
-$font-title-bold: 'Poppins-Bold', Helvetica, Arial, sans-serif;
-$font-title-extrabold: 'Poppins-ExtraBold', Helvetica, Arial, sans-serif;
+$font-title-thin: "Poppins-Thin", Helvetica, Arial, sans-serif;
+$font-title-light: "Poppins-Light", Helvetica, Arial, sans-serif;
+$font-title-regular: "Poppins-Regular", Helvetica, Arial, sans-serif;
+$font-title-medium: "Poppins-Medium", Helvetica, Arial, sans-serif;
+$font-title-semibold: "Poppins-SemiBold", Helvetica, Arial, sans-serif;
+$font-title-bold: "Poppins-Bold", Helvetica, Arial, sans-serif;
+$font-title-extrabold: "Poppins-ExtraBold", Helvetica, Arial, sans-serif;
 
-$font-primary-thin: 'Roboto-Thin', sans-serif;
-$font-primary-light: 'Roboto-Light', sans-serif;
-$font-primary-regular: 'Roboto-Regular', sans-serif;
-$font-primary-medium: 'Roboto-Medium', sans-serif;
-$font-primary-blod: 'Roboto-Bold', sans-serif;
-
+$font-primary-thin: "Roboto-Thin", sans-serif;
+$font-primary-light: "Roboto-Light", sans-serif;
+$font-primary-regular: "Roboto-Regular", sans-serif;
+$font-primary-medium: "Roboto-Medium", sans-serif;
+$font-primary-blod: "Roboto-Bold", sans-serif;
 
 // COLORS
-$primary-color: #bd1e26;
+$primary-color: #008080;
 $title-text-color: #020202;
 $body-text-color: #737373;
-$link-hover-color: #FF9D1D;
+$link-hover-color: #008080;
 
-$light-white-color: #F9F9F9;
+$light-white-color: #f9f9f9;
 
 $white: #ffffff;
 $black: #000000;
 
-$gradient-color: linear-gradient(to right, #bd1e26, #EA0909);
+// $gradient-color: linear-gradient(to right, #bd1e26, #EA0909);
+$gradient-color: linear-gradient(to right, #007777, #008888);
 // Product Color
-
-

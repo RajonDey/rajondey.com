@@ -9,32 +9,6 @@ Template name: Homepage
 
 get_header(); ?>
 
-<style>
-	.project-highlight {
-		padding-bottom:70px;
-	}
-	.project-highlight ul {
-		padding-left:20px!important;
-	}
-	.project-highlight ul li {
-		list-style: disc !important;
-	}
-	.rdc-home a {
-		color: #020202;
-		font-weight: 600;
-		border-bottom: 0.5px dashed #dddddd;
-	}
-	.rdc-home a:hover,
-	.rdc-home a:focus {
-		color: #ea0909;
-		border-bottom: 1px solid #ea0909;
-	}
-	
-	.rdc-home a.rdc-btn:hover{
-		color: #ffffff;
-	}
-</style>
-
 <div class="container rdc-main-container rdc-home">
 		<div class="row justify-content-center">
 			<div class="col-md-12">
@@ -47,17 +21,6 @@ get_header(); ?>
 						<p>Crafting digital solutions and sharing life insights. Welcome to my digital space. Explore web development tips, life hacks, and my journey in tech and beyond.</p>
 
 						<a href="https://join.rajondey.com/" target="_blank" class="rdc-btn">Get Insights</a>
-						 
-						
-						<!-- <p>This is a place where I explore, receive, and share notions. In this circle of existence, I enjoy sharing content about the <a href="https://www.rajondey.com/category/web-development/" target="_blank" rel="noopener noreferrer">Web</a>, <a href="https://www.rajondey.com/category/music/" target="_blank" rel="noopener noreferrer">Music</a>, and <a href="https://www.rajondey.com/category/life/" target="_blank" rel="noopener noreferrer">Life</a> itself.</p> -->
-
-						<!-- <p>Here, you'll only find recommendations for resources that  I’ve either personally created or wholeheartedly endorsed. There's no room for hype or fluff; it's all about the absolute best I've encountered on this journey: from the <a href="https://www.rajondey.com/resources/books/" target="_blank" rel="noopener noreferrer">Books</a> I've liked to the <a href="https://www.rajondey.com/resources/course/" target="_blank" rel="noopener noreferrer">Courses</a> I've mastered, the <a href="https://www.rajondey.com/resources/tech-tools/" target="_blank" rel="noopener noreferrer">Tech & Tools</a> I've experimented with, and the <a href="https://www.rajondey.com/resources/gears/" target="_blank" rel="noopener noreferrer">Gears</a> I trust.</p> -->
-					
-						<!-- <p>
-							Let's connect for a harmonious rhythm in this ever-spinning wheel of existence. 🤝
-						</p>
-
-                        <a href="https://join.rajondey.com/" target="_blank" class="rdc-btn">Join Now</a> -->
 					</div>
 					<div class="col-lg-5 text-center intro-image">
 						<div class="video-container">
@@ -236,18 +199,14 @@ get_header(); ?>
 				<!-- Newsletter Section -->
 				<div class="newsletter-section">
 					<div class="row align-items-center">
-						<div class="col-md-3">
-							<img src="https://www.rajondey.com/wp-content/uploads/2024/09/dev-tools-book-cover.png" alt="Ultimate Developer Tools" class="">
+						<div class="col-md-6 text-center">
+							<img src="https://www.rajondey.com/wp-content/uploads/2024/09/dev-tools-book-cover.png" alt="Ultimate Developer Tools" width="360" height="auto">
 						</div>
-						<div class="col-md-9">
-							<h3 class="mb-3">Get Your Free eBook</h3>
-							<p class="mb-3">Subscribe to receive "Ultimate Developer Tools" and weekly insights.</p>
-							<form class="newsletter-form">
-								<div class="input-group">
-									<input type="email" class="form-control" placeholder="Your email address" required>
-									<button class="btn btn-primary" type="submit">Subscribe</button>
-								</div>
-							</form>
+						<div class="col-md-6">
+							<h3 class="mb-3">Developer Data!</h3>
+							<p class="mb-3">Get 'Ultimate Developer Tools' Today!</p>
+							<iframe src="https://embeds.beehiiv.com/664364ea-a049-49b3-82c0-b52fa54eaf2f?slim=true" data-test-id="beehiiv-embed" height="52" width="100%" frameborder="0" scrolling="no" style="margin: 0; border-radius: 0px !important; background-color: transparent;"></iframe>
+							<small class="text-muted">We respect your privacy. Unsubscribe at any time.</small>
 						</div>
 					</div>
 				</div>
@@ -257,25 +216,22 @@ get_header(); ?>
 					<div class="col-lg-12">
 						<h2 class="section-title">My Story</h2>
 					</div>
-					<div class="col-lg-6 text-center intro-image">
-						<img src="http://www.rajondey.com/wp-content/uploads/2021/07/rajon-dey.jpg" alt="Rajon" width="100%">
-						<ul class="social-list d-flex gap-3 justify-content-center mt-3">
-							<li class="facebook"><a href="https://www.facebook.com/rajjon.dey/" target="_blank"><i class="bi bi-facebook"></i></a></li>
-							<li class="instagram"><a href="https://www.instagram.com/rajjon.dey/" target="_blank"><i class="bi bi-instagram"></i></a></li>
-							<li class="twitter"><a href="https://twitter.com/rajjon_dey" target="_blank"><i class="bi bi-twitter"></i></a></li>
-							<li class="linkedin"><a href="https://www.linkedin.com/in/rajondey/" target="_blank"><i class="bi bi-linkedin"></i></a></li>
-							<li class="github"><a href="https://github.com/RajonDey" target="_blank"><i class="bi bi-github"></i></a></li>
-						</ul> 
-					</div>
-					<div class="col-lg-6 bio">
-						<p>Hey, I'm Rajon! I initially pursued a business education but later found my passion in Software Development. My journey started in 2014, and I freelanced until 2019. Then, I ventured into the corporate world with <a href="https://sjinnovation.com/" target="_blank" rel="noopener noreferrer">SJ Innovation Llc</a>, where I currently hold the position of Module Lead in the Frontend Development team.</p>
+					<div class="col-lg-7 bio">
+						<p>Welcome to my digital playground!, I'm Rajon! I initially pursued a business education but later found my passion in Software Development. My journey started in 2014, and I freelanced until 2019. Then, I ventured into the corporate world with <a href="https://sjinnovation.com/" target="_blank" rel="noopener noreferrer">SJ Innovation Llc</a>, where I currently hold the position of Module Lead in the Frontend Development team.</p>
 						
 						<p>As a Software Developer, my passion is crafting smart, meaningful, and professional websites that enhance the online presence of individuals and businesses, making the web a more engaging, effective, and better platform.</p>
 						
 						<p>Beyond coding, I'm also a Digital Creator, crafting content on the internet, an Investor in various sectors, and a passionate Music Lover.</p>
-						
-						<p>You can contact me by email at <a href="mailto:hello@rajondey.com">hello@rajondey.com</a> to say hi! I always appreciate meeting new people. </p>
-						<p>Discover My Journey and Get to Know Me Better – <a href="https://www.rajondey.com/about">Explore My Story Here</a></p>
+
+						<a href="https://www.rajondey.com/about" class="rdc-btn">Full Story</a>
+					</div>
+					<div class="col-lg-5 text-center intro-image">
+						<img src="http://www.rajondey.com/wp-content/uploads/2021/07/rajon-dey.jpg" alt="Rajon" width="80%">
+						<ul class="social-list d-flex gap-3 justify-content-center mt-3">
+							<li class="instagram"><a href="https://www.instagram.com/rajjon.dey/" target="_blank"><i class="bi bi-instagram"></i></a></li>
+							<li class="twitter"><a href="https://twitter.com/rajjon_dey" target="_blank"><i class="bi bi-twitter"></i></a></li>
+							<li class="linkedin"><a href="https://www.linkedin.com/in/rajondey/" target="_blank"><i class="bi bi-linkedin"></i></a></li>
+						</ul> 
 					</div>
 				</div>
 
