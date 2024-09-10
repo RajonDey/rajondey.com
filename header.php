@@ -109,24 +109,25 @@
                 </div>
 
                 <!-- Sticky Navbar Section -->              
-                <nav class="navbar" id="sticky-navbar">
-                    <?php
-                        wp_nav_menu( array(
-                            'theme_location' => 'primary',
-                            'container' => false,
-                            'menu_class' => 'nav navbar-nav d-none d-lg-block',
-                            'link_class'   => 'nav-link m-2 menu-item nav-active',
-                            'walker' => new rdcircles_Walker_Nav_Primary()
-                        ) );    
-                    ?>
-                    <!-- Search Form -->
-                    <div class="d-flex align-items-center icons">
+                <nav class="" id="sticky-navbar">
+                    <div class="navbar d-flex align-items-center justify-content-start">
+                        <?php
+                            wp_nav_menu( array(
+                                'theme_location' => 'primary',
+                                'container' => false,
+                                'menu_class' => 'nav navbar-nav d-none d-lg-block',
+                                'link_class'   => 'nav-link m-2 menu-item nav-active',
+                                'walker' => new rdcircles_Walker_Nav_Primary()
+                            ) );    
+                        ?>
                         <form role="search" method="get" class="search" action="<?php echo esc_url(home_url('/')); ?>">
                             <input class="inputsearch" type="search" placeholder="Hit enter to search!" aria-label="Search" name="s" title="Search for">
                             <span type="submit" class="rdcircles-icon rdcircles-search"></span>
                             <input type="hidden" name="post_type" value="post"> 
                         </form> 
-    
+                    </div>
+                    <!-- Search Form -->
+                    <div class="d-flex align-items-center icons">
 
                         <a class="js-toggleSidebar sidebar-open">
                             <div class="sidebar-open-icon">

@@ -12639,7 +12639,11 @@ textarea {
   text-transform: none;
   line-height: 1;
   -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  -moz-osx-font-smoothing: grayscale .rdcircles-icon;
+}
+
+.rdcircles-icon :hover {
+  opacity: 1;
 }
 
 .rdcircles-twitter:before {
@@ -12796,13 +12800,19 @@ body.no-scroll .footer {
   left: 10px;
   color: #ffffff;
   cursor: pointer;
+  position: absolute;
+}
+
+.sidebar-close span.rdcircles-menu,
+.sidebar-open span.rdcircles-menu {
+  opacity: 0.6;
 }
 
 .sidebar-close:hover,
 .sidebar-close:focus,
 .sidebar-open:hover,
 .sidebar-open:focus {
-  color: #F56B08;
+  color: #f56b08;
 }
 
 .sidebar-open {
@@ -12838,6 +12848,11 @@ body.no-scroll .footer {
 
 .sidebar-open-icon {
   color: black;
+  opacity: 0.6;
+}
+
+.sidebar-open-icon:hover {
+  opacity: 1;
 }
 
 .sidebar-close-icon {
@@ -12883,7 +12898,7 @@ body.no-scroll .footer {
 }
 
 .rdc-newsletter-widget {
-  background: #F9F9F9;
+  background: #f9f9f9;
   padding: 20px;
   text-align: center;
 }
@@ -13024,7 +13039,7 @@ body.no-scroll .footer {
 
 .header .search {
   position: relative;
-  margin-right: 20px;
+  padding: 7px 5px;
 }
 
 .header .search input[type="search"] {
@@ -13102,11 +13117,9 @@ body.no-scroll .footer {
   transition: top 0.9s;
   border-bottom: 1px solid #eeeeee;
   background: #ffffff;
-  padding: 12px 20px 6px;
 }
 
 #sticky-navbar ul {
-  width: 80%;
   float: left;
 }
 

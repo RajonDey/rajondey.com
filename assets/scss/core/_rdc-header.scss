@@ -151,7 +151,7 @@
 
   .search {
     position: relative;
-    margin-right: 20px;
+    padding: 7px 5px;
     input[type="search"] {
       width: 20px;
       box-sizing: border-box;
@@ -228,9 +228,7 @@
   transition: top 0.9s;
   border-bottom: 1px solid #eeeeee;
   background: #ffffff;
-  padding: 12px 20px 6px;
   ul {
-    width: 80%;
     float: left;
   }
   .icons {
