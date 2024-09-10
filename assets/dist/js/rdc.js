@@ -212,36 +212,64 @@ jQuery(document).ready(function ($) {
   });
 });
 
-
+// Script for Hero Section Video - Play Button
 window._wq = window._wq || [];
-_wq.push({ id: 'os7etyvwn1', onReady: function(video) {
-    var playButton = document.getElementById('custom-play-button');
-    var videoContainer = document.getElementById('wistia-container');
+_wq.push({
+  id: "os7etyvwn1",
+  onReady: function (video) {
+    var playButton = document.getElementById("custom-play-button");
+    var videoContainer = document.getElementById("wistia-container");
 
-    playButton.addEventListener('click', function() {
+    playButton.addEventListener("click", function () {
+      video.play();
+    });
+
+    video.bind("play", function () {
+      playButton.style.display = "none";
+    });
+
+    video.bind("pause", function () {
+      playButton.style.display = "block";
+    });
+
+    video.bind("end", function () {
+      playButton.style.display = "block";
+    });
+
+    videoContainer.addEventListener("click", function (e) {
+      if (e.target === playButton || playButton.contains(e.target)) {
+        return;
+      }
+      if (video.state() === "playing") {
+        video.pause();
+      } else {
         video.play();
+      }
     });
+  },
+});
 
-    video.bind('play', function() {
-        playButton.style.display = 'none';
-    });
+// Script for word changing for life role
+const roles = [
+  "Sporty",
+  "Visionary",
+  "Investor",
+  "Traveler",
+  "Meditator",
+  "Reader",
+  "Yogi",
+];
 
-    video.bind('pause', function() {
-        playButton.style.display = 'block';
-    });
+let index = 0;
 
-    video.bind('end', function() {
-        playButton.style.display = 'block';
-    });
+function changeLifeRole() {
+  const lifeRoleElement = document.getElementById("life-role");
+  lifeRoleElement.style.width = "0"; // Reset the typing effect
+  setTimeout(() => {
+    lifeRoleElement.textContent = roles[index]; // Change the role
+    lifeRoleElement.style.width = ""; // Trigger typing animation
+    index = (index + 1) % roles.length;
+  }, 200); // Short delay to create smooth typing transition
+}
 
-    videoContainer.addEventListener('click', function(e) {
-        if (e.target === playButton || playButton.contains(e.target)) {
-            return;
-        }
-        if (video.state() === 'playing') {
-            video.pause();
-        } else {
-            video.play();
-        }
-    });
-}});
+setInterval(changeLifeRole, 3000); // Change every 3 seconds

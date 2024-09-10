@@ -13383,6 +13383,24 @@ body.no-scroll .footer {
   }
 }
 
+.rdc-home .intro h2 .highlight, .rdc-home .intro .h2 .highlight {
+  background-color: #008080;
+  color: white;
+  padding: 0 8px;
+  border-radius: 4px;
+  animation: fade 3s ease-in-out infinite;
+}
+
+@keyframes fade {
+  0%,
+  100% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+
 .rdc-home .video-container {
   position: relative;
   border-radius: 6px;

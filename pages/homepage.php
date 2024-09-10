@@ -15,12 +15,12 @@ get_header(); ?>
 				<!-- Intro Section -->
 				<div class="row intro">
 					<div class="col-lg-7">
-						<h1 class="section-title">I'm Rajon Dey</h1>
-						<h2>Web Developer / Life Enthusiast / Musician</h2>
+						<h1 class="section-title">Hey, I'm Rajon Dey</h1>
+						<h2>Web Developer / <span id="life-role" class="highlight">Life Enthusiast</span> / Aspiring Musician</h2>
 
-						<p>Crafting digital solutions and sharing life insights. Welcome to my digital space. Explore web development tips, life hacks, and my journey in tech and beyond.</p>
+						<p>I love creating softwares, digital contents, and moments in life!. Welcome to my digital space. Explore web development tips, life hacks, and my journey in tech and beyond.</p>
 
-						<a href="https://join.rajondey.com/" target="_blank" class="rdc-btn">Get Insights</a>
+						<a href="https://join.rajondey.com/" target="_blank" class="rdc-btn">Join the Journey</a>
 					</div>
 					<div class="col-lg-5 text-center intro-image">
 						<div class="video-container">
