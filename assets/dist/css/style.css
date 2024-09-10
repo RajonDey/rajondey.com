@@ -4577,18 +4577,16 @@ fieldset:disabled .btn {
 .card-body {
   flex: 1 1 auto;
   padding: var(--bs-card-spacer-y) var(--bs-card-spacer-x);
-  color: var(--bs-card-color);
 }
 
 .card-title {
   margin-bottom: var(--bs-card-title-spacer-y);
-  color: var(--bs-card-title-color);
+  font-weight: bold;
 }
 
 .card-subtitle {
-  margin-top: calc(-.5 * var(--bs-card-title-spacer-y));
+  margin-top: calc( -0.5 * var(--bs-card-title-spacer-y));
   margin-bottom: 0;
-  color: var(--bs-card-subtitle-color);
 }
 
 .card-text:last-child {
@@ -4623,9 +4621,9 @@ fieldset:disabled .btn {
 }
 
 .card-header-tabs {
-  margin-right: calc(-.5 * var(--bs-card-cap-padding-x));
-  margin-bottom: calc(-1 * var(--bs-card-cap-padding-y));
-  margin-left: calc(-.5 * var(--bs-card-cap-padding-x));
+  margin-right: calc( -0.5 * var(--bs-card-cap-padding-x));
+  margin-bottom: calc( -1 * var(--bs-card-cap-padding-y));
+  margin-left: calc( -0.5 * var(--bs-card-cap-padding-x));
   border-bottom: 0;
 }
 
@@ -4635,8 +4633,8 @@ fieldset:disabled .btn {
 }
 
 .card-header-pills {
-  margin-right: calc(-.5 * var(--bs-card-cap-padding-x));
-  margin-left: calc(-.5 * var(--bs-card-cap-padding-x));
+  margin-right: calc( -0.5 * var(--bs-card-cap-padding-x));
+  margin-left: calc( -0.5 * var(--bs-card-cap-padding-x));
 }
 
 .card-img-overlay {
@@ -12313,28 +12311,32 @@ select:focus, a:focus, textarea:focus, input:focus {
 
 .body-font,
 html,
-body {
+body,
+.card-text {
   font-size: 15px;
   line-height: 1.65em;
-  letter-spacing: .1px;
+  letter-spacing: 0.1px;
   font-family: "Roboto-Regular", sans-serif;
+  color: #737373;
 }
 
 .body-bigfont,
 .rdc-home .intro {
   font-size: 17px;
   line-height: 1.7em;
-  letter-spacing: .1px;
+  letter-spacing: 0.1px;
   font-family: "Roboto-Regular", sans-serif;
+  color: #737373;
 }
 
 .title-one, h1, .h1 {
   font-family: "Poppins-Bold", Helvetica, Arial, sans-serif;
   margin-top: 0;
   margin-bottom: 14px;
-  font-size: 28px;
-  line-height: 1.45em;
-  letter-spacing: .4px;
+  font-size: 32px;
+  line-height: 1.55em;
+  letter-spacing: 0.4px;
+  color: #020202;
 }
 
 @media (max-width: 767.98px) {
@@ -12349,7 +12351,8 @@ body {
   margin-bottom: 14px;
   font-size: 24px;
   line-height: 1.25em;
-  letter-spacing: .4px;
+  letter-spacing: 0.4px;
+  color: #020202;
 }
 
 @media (max-width: 767.98px) {
@@ -12364,6 +12367,7 @@ body {
   margin-bottom: 14px;
   font-size: 19px;
   line-height: 1.25em;
+  color: #020202;
 }
 
 @media (max-width: 767.98px) {
@@ -12403,13 +12407,29 @@ body {
   bottom: 2.5px;
   left: 0;
   position: absolute;
-  background: linear-gradient(to right, #e0e0e0 0, #e0e0e0 35%, #e0e0e0 65%, #FFF 100%);
+  background: linear-gradient(to right, #e0e0e0 0, #e0e0e0 35%, #e0e0e0 65%, #fff 100%);
   background: -moz-linear-gradient(left, #e0e0e0 0, #e0e0e0 35%, #e0e0e0 65%, #fff 100%);
-  background: -webkit-gradient(linear, left top, right top, color-stop(0%, #e0e0e0), color-stop(35%, #e0e0e0), color-stop(65%, #e0e0e0), color-stop(100%, #FFF));
+  background: -webkit-gradient(linear, left top, right top, color-stop(0%, #e0e0e0), color-stop(35%, #e0e0e0), color-stop(65%, #e0e0e0), color-stop(100%, #fff));
 }
 
 .formkit-form[data-uid="3264118d5d"] .formkit-input,
-select, textarea, input[type="text"], input[type="password"], input[type="datetime"], input[type="datetime-local"], input[type="date"], input[type="month"], input[type="time"], input[type="week"], input[type="number"], input[type="email"], input[type="url"], input[type="search"], input[type="tel"], input[type="color"], .uneditable-input {
+select,
+textarea,
+input[type="text"],
+input[type="password"],
+input[type="datetime"],
+input[type="datetime-local"],
+input[type="date"],
+input[type="month"],
+input[type="time"],
+input[type="week"],
+input[type="number"],
+input[type="email"],
+input[type="url"],
+input[type="search"],
+input[type="tel"],
+input[type="color"],
+.uneditable-input {
   border-radius: 0;
   resize: none;
   outline: 0;
@@ -12441,7 +12461,7 @@ input[type="submit"] {
   color: #222;
   transition: all 0.15s ease-in;
   font-size: 13.5px;
-  letter-spacing: -.2px;
+  letter-spacing: -0.2px;
   font-weight: 600;
   cursor: pointer;
   font-family: inherit;
@@ -12497,7 +12517,7 @@ textarea {
 .rdc-btn-fill:hover {
   color: #fff;
   background-color: #bd1e26;
-  background-color: linear-gradient(to right, #EA0909, #bd1e26);
+  background-color: linear-gradient(to right, #ea0909, #bd1e26);
 }
 
 
@@ -12577,7 +12597,7 @@ textarea {
 
 .rdc-subs-form .formkit-form[data-uid="3264118d5d"] .formkit-submit::hover {
   background-color: #bd1e26 !important;
-  background: linear-gradient(to right, #bd1e26, #EA0909) !important;
+  background: linear-gradient(to right, #bd1e26, #ea0909) !important;
   color: #ffffff !important;
 }
 
@@ -13351,6 +13371,31 @@ body.no-scroll .footer {
   }
 }
 
+.rdc-home .video-container {
+  position: relative;
+  border-radius: 6px;
+}
+
+.rdc-home .video-container .play-button {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 10;
+  cursor: pointer;
+}
+
+.rdc-home .video-container .play-button i {
+  font-size: 64px;
+  color: white;
+  opacity: 0.8;
+  transition: opacity 0.3s ease;
+}
+
+.rdc-home .video-container .play-button:hover i {
+  opacity: 1;
+}
+
 .rdc-home .featured-category ul.categories {
   padding: 0px;
   margin: 0px;
@@ -13387,6 +13432,7 @@ body.no-scroll .footer {
   align-items: center;
   justify-content: center;
   padding: 30px;
+  height: 120px;
 }
 
 @media (max-width: 991.98px) {
@@ -13400,31 +13446,24 @@ body.no-scroll .footer {
 }
 
 .rdc-home .featured-category ul.categories li a .icon {
-  background-color: #bd1e26;
-  width: 50px;
   height: 50px;
   display: flex;
   align-items: center;
   border-radius: 6px;
   margin-right: 15px;
   padding: 6px;
+  position: absolute;
+  z-index: -1;
+}
+
+.rdc-home .featured-category ul.categories li a .icon img {
+  height: 120px;
+  width: auto;
 }
 
 .rdc-home .featured-category ul.categories li a h3, .rdc-home .featured-category ul.categories li a .h3 {
   margin-bottom: 0px;
   color: #020202;
-}
-
-.rdc-home .featured-category ul.categories li.life a .icon {
-  background-color: #D92424;
-}
-
-.rdc-home .featured-category ul.categories li.web a .icon {
-  background-color: #83D5FB;
-}
-
-.rdc-home .featured-category ul.categories li.music a .icon {
-  background-color: #D622C3;
 }
 
 .rdc-home .latest-post {
@@ -13475,6 +13514,34 @@ body.no-scroll .footer {
   margin-bottom: 0px;
 }
 
+.rdc-home .all-projects .card .col-md-4 {
+  text-align: center;
+  margin: auto;
+}
+
+.rdc-home .all-projects .card .col-md-4 img {
+  max-width: 70%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+@media (max-width: 767.98px) {
+  .rdc-home .all-projects .card .col-md-4 img {
+    max-width: 50%;
+  }
+}
+
+.rdc-home .all-projects .card .card-body {
+  position: relative;
+}
+
+.rdc-home .all-projects .card .card-body .badge.badge-danger {
+  position: absolute;
+  background: #f66666;
+  right: 10px;
+  top: 10px;
+}
+
 .rdc-home .youtube-videos {
   padding-bottom: 70px;
 }
@@ -13509,12 +13576,53 @@ body.no-scroll .footer {
 }
 
 .rdc-home .youtube-videos .subscribe-btn a i {
-  color: #D92525;
+  color: #d92525;
   margin-right: 7px;
 }
 
 .rdc-home .youtube-videos .subscribe-btn a:hover i {
   color: #fff;
+}
+
+.rdc-home .newsletter-section {
+  background-color: #f8f9fa;
+  padding: 2rem 0;
+  border: 1px solid #e9ecef;
+  border-radius: 5px;
+}
+
+.rdc-home .newsletter-section .book-cover {
+  max-width: 100%;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.rdc-home .newsletter-section h3, .rdc-home .newsletter-section .h3 {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.rdc-home .newsletter-section p {
+  font-size: 0.9rem;
+  color: #6c757d;
+}
+
+.rdc-home .newsletter-section .newsletter-form .form-control {
+  border-right: none;
+}
+
+.rdc-home .newsletter-section .newsletter-form .form-control:focus {
+  box-shadow: none;
+  border-color: #ced4da;
+}
+
+.rdc-home .newsletter-section .newsletter-form .btn-primary {
+  background-color: #f66666;
+  border-color: #f66666;
+}
+
+.rdc-home .newsletter-section .newsletter-form .btn-primary:hover {
+  background-color: #f33636;
+  border-color: #f33636;
 }
 
 .rdc-home .newsletter {

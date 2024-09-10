@@ -4576,18 +4576,16 @@ fieldset:disabled .btn {
 .card-body {
   flex: 1 1 auto;
   padding: var(--bs-card-spacer-y) var(--bs-card-spacer-x);
-  color: var(--bs-card-color);
 }
 
 .card-title {
   margin-bottom: var(--bs-card-title-spacer-y);
-  color: var(--bs-card-title-color);
+  font-weight: bold;
 }
 
 .card-subtitle {
-  margin-top: calc(-.5 * var(--bs-card-title-spacer-y));
+  margin-top: calc( -0.5 * var(--bs-card-title-spacer-y));
   margin-bottom: 0;
-  color: var(--bs-card-subtitle-color);
 }
 
 .card-text:last-child {
@@ -4622,9 +4620,9 @@ fieldset:disabled .btn {
 }
 
 .card-header-tabs {
-  margin-right: calc(-.5 * var(--bs-card-cap-padding-x));
-  margin-bottom: calc(-1 * var(--bs-card-cap-padding-y));
-  margin-left: calc(-.5 * var(--bs-card-cap-padding-x));
+  margin-right: calc( -0.5 * var(--bs-card-cap-padding-x));
+  margin-bottom: calc( -1 * var(--bs-card-cap-padding-y));
+  margin-left: calc( -0.5 * var(--bs-card-cap-padding-x));
   border-bottom: 0;
 }
 
@@ -4634,8 +4632,8 @@ fieldset:disabled .btn {
 }
 
 .card-header-pills {
-  margin-right: calc(-.5 * var(--bs-card-cap-padding-x));
-  margin-left: calc(-.5 * var(--bs-card-cap-padding-x));
+  margin-right: calc( -0.5 * var(--bs-card-cap-padding-x));
+  margin-left: calc( -0.5 * var(--bs-card-cap-padding-x));
 }
 
 .card-img-overlay {
