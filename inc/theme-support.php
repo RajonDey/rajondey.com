@@ -185,29 +185,59 @@ function rdcircles_post_navigation()
 function rdcircles_share_this($content)
 {
     if (is_single()) {
-        $content .= '<div class="rdcircles-shareThis"><h4>Share</h4>';
-
-        $title = get_the_title();
-        $permalink = get_permalink();
-
+        $title = urlencode(get_the_title());
+        $permalink = urlencode(get_permalink());
         $twitterHandler = (get_option('twitter_handler') ? '&amp;via='.esc_attr(get_option('twitter_handler')) : '');
 
-        $twitter = 'https://twitter.com/intent/tweet?text=Hey! Read this: '.$title.'&amp;url='.$permalink.$twitterHandler.'';
+        $x = 'https://twitter.com/intent/tweet?text=Hey! Read this: '.$title.'&amp;url='.$permalink.$twitterHandler.'';
         $facebook = 'https://www.facebook.com/sharer/sharer.php?u='.$permalink;
-        $google = 'https://plus.google.com/share?url='.$permalink;
+        $linkedin = 'https://www.linkedin.com/shareArticle?mini=true&url='.$permalink.'&title='.$title;
 
-        $content .= '<ul>';
-        $content .= '<li><a href="'.$twitter.'" target="_blank" rel="nofollow"><span class="rdcircles-icon rdcircles-twitter"></span></a></li>';
-        $content .= '<li><a href="'.$facebook.'" target="_blank" rel="nofollow"><span class="rdcircles-icon rdcircles-facebook"></span></a></li>';
-        $content .= '<li><a href="'.$google.'" target="_blank" rel="nofollow"><span class="rdcircles-icon rdcircles-googleplus"></span></a></li>';
-        $content .= '</ul></div><!-- .rdcircles-share -->';
+        $share_links = [
+            'copy' => [
+                'url' => get_permalink(),
+                'icon' => 'bi-clipboard',
+                'text' => 'Copy link'
+            ],
+            'x' => [
+                'url' => $x,
+                'icon' => 'bi-twitter',
+                'text' => 'Share on X'
+            ],
+            'facebook' => [
+                'url' => $facebook,
+                'icon' => 'bi-facebook',
+                'text' => 'Share on Facebook'
+            ],
+            'linkedin' => [
+                'url' => $linkedin,
+                'icon' => 'bi-linkedin',
+                'text' => 'Share on LinkedIn'
+            ]
+        ];
 
-        return $content;
+        $share_html = '<div class="rdcircles-shareThis">';
+        $share_html .= '<span class="share-icon"><i class="bi bi-box-arrow-up"></i> Share</span>';
+        $share_html .= '<div class="share-dropdown">';
+        $share_html .= '<ul>';
+        foreach ($share_links as $network => $data) {
+            if ($network === 'copy') {
+                $share_html .= '<li><a href="#" class="copy-link" data-link="'.$data['url'].'"><i class="bi '.$data['icon'].'"></i>'.$data['text'].'</a></li>';
+            } else {
+                $share_html .= '<li><a href="'.$data['url'].'" target="_blank" rel="nofollow"><i class="bi '.$data['icon'].'"></i>'.$data['text'].'</a></li>';
+            }
+        }
+        $share_html .= '</ul>';
+        $share_html .= '</div>';
+        $share_html .= '</div>';
+
+        return $content . $share_html;
     } else {
         return $content;
     }
 }
 add_filter('the_content', 'rdcircles_share_this');
+
 
 function rdcircles_get_post_navigation()
 {

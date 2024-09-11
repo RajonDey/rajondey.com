@@ -274,4 +274,23 @@ function changeLifeRole() {
 
 setInterval(changeLifeRole, 3000);
 
-// kasdh
+// Share this option
+document.addEventListener("DOMContentLoaded", function () {
+  const copyLinks = document.querySelectorAll(".copy-link");
+
+  copyLinks.forEach((link) => {
+    link.addEventListener("click", function (e) {
+      e.preventDefault();
+      const url = this.getAttribute("data-link");
+
+      navigator.clipboard
+        .writeText(url)
+        .then(() => {
+          alert("Link copied to clipboard!");
+        })
+        .catch((err) => {
+          console.error("Failed to copy: ", err);
+        });
+    });
+  });
+});
