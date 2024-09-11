@@ -61,6 +61,22 @@ h3 {
   }
 }
 
+a {
+  color: #333;
+  font-weight: 600;
+  border-bottom: 0.5px dashed #dddddd;
+  &:hover,
+  &:focus {
+    color: $title-text-color;
+    border-bottom: 1px solid $title-text-color;
+  }
+}
+
+b,
+strong {
+  color: #333;
+}
+
 .comment-reply-title,
 .rdcircles-widget-title,
 .section-title {

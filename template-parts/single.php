@@ -8,18 +8,6 @@
 */
 
 ?>
-<style>
-
-	.post-cover-img {
-		margin-top: 0px;
-		margin-bottom: 0px;
-		width: 100%;
-		height: auto;
-		max-height: 400px;
-		object-fit: contain;
-		background: #eee;
-	}
-</style>
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 
 	<header class="post-header text-center">

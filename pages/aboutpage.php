@@ -32,7 +32,7 @@ get_header(); ?>
 
                     <p>You can contact me by email at <a href="mailto:hello@rajondey.com">hello@rajondey.com</a> to say hi! I always appreciate meeting new people. </p>
 					
-                    <a href="https://docs.google.com/document/d/1xTSzDQPD0ttEoSm8FP9My8NFRW7KUDcxLE1aWW5XAHk/edit?usp=sharing" target="_blank"><button class="btn rdc-btn">Resume</button></a>
+                    <a href="https://docs.google.com/document/d/1xTSzDQPD0ttEoSm8FP9My8NFRW7KUDcxLE1aWW5XAHk/edit?usp=sharing" target="_blank"><button class="btn rdc-btn"><i class="bi bi-file-text"></i> Resume</button></a>
 
 					<?php echo get_template_part( 'template-parts/components/social-list', 'part' ); ?>
                 </div>
@@ -64,11 +64,11 @@ get_header(); ?>
             <div class="row contact">
                 <div class="col-md-12">
                     <h2 class="section-title">Get in touch</h2>
-<p><span class="emoji">🐦</span> <b>Social Media:</b> If you have an opinion or short query, please tweet @rajjon.dey, I will be there as soon as I can. You can send direct messages on Instagram or Facebook.</p>
+<p><span class="emoji">🐦</span> <b>Social Media:</b> If you have an opinion or short query, please tweet <a href="https://twitter.com/rajjon_dey" target="_blank">@rajjon.dey</a>, I will be there as soon as I can. You can send direct messages on Instagram or Facebook.</p>
 
-<p><span class="emoji">📨</span> <b>Email:</b> For longer discussions, please do email at hello@rajondey.com. I read all my emails regularly and reply accordingly.</p>
+<p><span class="emoji">📨</span> <b>Email:</b> For longer discussions, please do email at <a href="mailto:hello@rajondey.com" target="_blank">hello@rajondey.com</a>. I read all my emails regularly and reply accordingly.</p>
 
-<p><span class="emoji">☕️</span> <b>Meet in Person:</b> I also like to meet new people in person if you have any trips to Sylhet, Bangladesh, and want to talk. I'll buy you a coffee, no questions asked. I'm generally available on weekends and weekday evenings. Drop me an email at coffee@rajondey.com to arrange.</p>
+<p><span class="emoji">☕️</span> <b>Meet in Person:</b> I also like to meet new people in person if you have any trips to Sylhet, Bangladesh, and want to talk. I'll buy you a coffee, no questions asked. I'm generally available on weekends and weekday evenings. Drop me an email at <a href="mailto:coffee@rajondey.com" target="_blank">coffee@rajondey.com</a> to arrange.</p>
 
                 </div>
             </div>

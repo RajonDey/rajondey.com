@@ -1,0 +1,206 @@
+/* single post page CSS modified */
+.rdcircles-single-post .post-content a {
+  color: #606060;
+  font-weight: 600;
+  border-bottom: 0.5px dashed #606060;
+}
+.rdcircles-single-post .post-content p,
+.rdcircles-single-post .post-content ul {
+  margin-top: 10px;
+}
+.rdcircles-single-post .rdcircles-shareThis ul {
+  margin-top: 0px;
+}
+.rdcircles-single-post .post-content img {
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+.wp-block-cover .has-background-dim:not([class*="-background-color"]),
+.rdcircles-single-post .post-content img {
+  border-radius: 7px;
+}
+.wp-block-cover__inner-container p {
+  color: #ffffff !important;
+}
+
+/* Table of content */
+#ez-toc-container a:hover {
+  text-decoration: none;
+}
+
+body > .gglcptch.gglcptch_v2 {
+  display: none;
+}
+code.EnlighterJSRAW,
+pre.EnlighterJSRAW {
+  background: #fafafa;
+  padding: 10px 15px;
+}
+
+/* insta iframe  */
+.rdcircles-single-post .type-books iframe.instagram-media {
+  margin: 0 auto !important;
+}
+
+/* 404 page styles */
+.no-content {
+  text-align: center;
+  padding: 60px 0;
+}
+.no-content h1 {
+  font-size: 60px;
+  color: #333;
+}
+.no-content p {
+  font-size: 20px;
+  color: #666;
+}
+.et_pb_promo_button {
+  background-color: #bd1e26;
+  background: linear-gradient(to right, #bd1e26, #ea0909);
+  color: #ffffff;
+  padding: 10px 20px;
+  text-decoration: none;
+  display: inline-block;
+  margin-top: 20px;
+  border-radius: 6px;
+}
+.et_pb_promo_button:hover {
+  background: linear-gradient(to right, #ea0909, #bd1e26);
+  color: #ffffff;
+}
+
+/* Style for Wp Code Editor */
+/* Prism.js Styles */
+pre.wp-block-code {
+  position: relative;
+  margin: 1em 0;
+  padding: 1em;
+  border-radius: 4px;
+  background: #f7f7f7;
+  font-family: Consolas, Monaco, "Andale Mono", "Ubuntu Mono", monospace;
+  font-size: 16px;
+  line-height: 1.5;
+  overflow: auto;
+}
+
+pre.wp-block-code code {
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+  white-space: pre-wrap;
+}
+
+.token.comment,
+.token.prolog,
+.token.doctype,
+.token.cdata {
+  color: slategray;
+}
+
+.token.punctuation {
+  color: #999;
+}
+
+.token.namespace {
+  opacity: 0.7;
+}
+
+.token.property,
+.token.tag,
+.token.boolean,
+.token.number,
+.token.constant,
+.token.symbol,
+.token.deleted {
+  color: #905;
+}
+
+.token.selector,
+.token.attr-name,
+.token.string,
+.token.char,
+.token.builtin,
+.token.inserted {
+  color: #690;
+}
+
+.token.operator,
+.token.entity,
+.token.url,
+.language-css .token.string,
+.style .token.string {
+  color: #a67f59;
+  background: transparent;
+}
+
+.token.atrule,
+.token.attr-value,
+.token.keyword {
+  color: #07a;
+}
+
+.token.function,
+.token.class-name {
+  color: #dd4a68;
+}
+
+.token.regex,
+.token.important,
+.token.variable {
+  color: #e90;
+}
+
+.token.important,
+.token.bold {
+  font-weight: bold;
+}
+
+.token.italic {
+  font-style: italic;
+}
+
+.token.entity {
+  cursor: help;
+}
+
+/* Basic table styling */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+  font-size: 1em;
+  font-family: sans-serif;
+  min-width: 400px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+
+table thead tr {
+  background-color: #009879;
+  color: #ffffff;
+  text-align: left;
+  font-weight: bold;
+}
+
+table th,
+table td {
+  padding: 12px 15px;
+  border: 1px solid #dddddd;
+}
+
+table tbody tr {
+  border-bottom: 1px solid #dddddd;
+}
+
+table tbody tr:nth-of-type(even) {
+  background-color: #f3f3f3;
+}
+
+table tbody tr:last-of-type {
+  border-bottom: 2px solid #009879;
+}
+
+table tbody tr.active-row {
+  font-weight: bold;
+  color: #009879;
+}

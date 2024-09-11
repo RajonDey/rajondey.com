@@ -264,12 +264,14 @@ let index = 0;
 
 function changeLifeRole() {
   const lifeRoleElement = document.getElementById("life-role");
-  lifeRoleElement.style.width = "0"; // Reset the typing effect
+  lifeRoleElement.style.width = "0";
   setTimeout(() => {
-    lifeRoleElement.textContent = roles[index]; // Change the role
-    lifeRoleElement.style.width = ""; // Trigger typing animation
+    lifeRoleElement.textContent = roles[index];
+    lifeRoleElement.style.width = "";
     index = (index + 1) % roles.length;
-  }, 200); // Short delay to create smooth typing transition
+  }, 200);
 }
 
-setInterval(changeLifeRole, 3000); // Change every 3 seconds
+setInterval(changeLifeRole, 3000);
+
+// kasdh

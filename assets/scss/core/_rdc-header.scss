@@ -44,6 +44,7 @@
           top: 30px;
           li a {
             text-transform: capitalize;
+            border: 0px solid transparent;
           }
           &:after {
             border: 10px solid transparent;
@@ -77,6 +78,7 @@
           display: inline-block;
           color: $body-text-color;
           font-family: $font-title-medium;
+          border: 0px solid transparent;
           &:hover {
             color: $title-text-color;
           }
