@@ -81,7 +81,7 @@ function rdcircles_posted_meta()
     endforeach;
     endif;
 
-    return '<span class="posted-on">Posted <a href="'.esc_url(get_permalink()).'">'.$posted_on.'</a> ago</span> / <span class="posted-in">'.$output.'</span>';
+    return '<span class="posted-on">Posted <a href="'.esc_url(get_permalink()).'">'.$posted_on.'</a> ago</span> / <span class="posted-in">'.$output.'</span>&nbsp;';
 }
 
 function rdcircles_posted_footer($onlyComments = false)
@@ -169,13 +169,43 @@ SINGLE POST CUSTOM FUNCTIONS
 */
 function rdcircles_post_navigation()
 {
-    $nav = '<div class="row post-navigation">';
+    $nav = '<div class="row post-navigation mt-12">';
 
-    $prev = get_previous_post_link('<div class="post-link-nav"><span class="rdcircles-icon rdcircles-chevron-left" aria-hidden="true"></span> %link</div>', '%title');
-    $nav .= '<div class="col-6 prev">'.$prev.'</div>';
+    // Function to limit words
+    function limit_words($string, $word_limit) {
+        $words = explode(' ', $string);
+        if (count($words) > $word_limit) {
+            return implode(' ', array_slice($words, 0, $word_limit)) . '...';
+        }
+        return $string;
+    }
 
-    $next = get_next_post_link('<div class="post-link-nav">%link <span class="rdcircles-icon rdcircles-chevron-right" aria-hidden="true"></span></div>', '%title');
-    $nav .= '<div class="col-6 next text-end">'.$next.'</div>';
+    // Previous Post
+    $prev_post = get_previous_post();
+    $nav .= '<div class="col-6 prev">';
+    $nav .= '<h4 class="nav-title">Previous Post</h4>';
+    if ($prev_post) {
+        $prev_title = limit_words(get_the_title($prev_post), 6);
+        $nav .= '<div class="post-link-nav"><i class="bi bi-arrow-left"></i> ';
+        $nav .= '<a href="' . get_permalink($prev_post) . '">' . $prev_title . '</a></div>';
+    } else {
+        $nav .= '<div class="post-link-nav">No Previous Post</div>';
+    }
+    $nav .= '</div>';
+
+    // Next Post
+    $next_post = get_next_post();
+    $nav .= '<div class="col-6 next text-end">';
+    $nav .= '<h4 class="nav-title">Next Post</h4>';
+    if ($next_post) {
+        $next_title = limit_words(get_the_title($next_post), 6);
+        $nav .= '<div class="post-link-nav">';
+        $nav .= '<a href="' . get_permalink($next_post) . '">' . $next_title . '</a> ';
+        $nav .= '<i class="bi bi-arrow-right"></i></div>';
+    } else {
+        $nav .= '<div class="post-link-nav">No Next Post</div>';
+    }
+    $nav .= '</div>';
 
     $nav .= '</div>';
 
@@ -217,7 +247,7 @@ function rdcircles_share_this($content)
         ];
 
         $share_html = '<div class="rdcircles-shareThis">';
-        $share_html .= '<span class="share-icon"><i class="bi bi-box-arrow-up"></i> Share</span>';
+        $share_html .= '&nbsp;<span class="share-icon"><i class="bi bi-box-arrow-up"></i> Share</span>';
         $share_html .= '<div class="share-dropdown">';
         $share_html .= '<ul>';
         foreach ($share_links as $network => $data) {
