@@ -14773,7 +14773,7 @@ table tbody tr.active-row {
 }
 
 .tool-caregory-list a {
-  background: #F8FAFC;
+  background: #f8fafc;
   border-radius: 6px;
   padding: 22px 50px;
   font-size: 13px;
@@ -14810,7 +14810,7 @@ table tbody tr.active-row {
   background: #fff;
   box-shadow: 0 22.9098px 36.6557px rgba(67, 67, 67, 0.06);
   transform: translateY(-2px);
-  transition: all ease-in-out .3s;
+  transition: all ease-in-out 0.3s;
 }
 
 .tech-tools .tools-item {
@@ -14823,8 +14823,12 @@ table tbody tr.active-row {
   padding-bottom: 60px;
 }
 
+.tech-tools .tools-item a {
+  border: none;
+}
+
 .tech-tools .tools-item--img {
-  background: #F8FAFC;
+  background: #f8fafc;
   text-align: center;
   margin-bottom: 20px;
   min-height: 130px;
@@ -14845,7 +14849,7 @@ table tbody tr.active-row {
 
 .tech-tools .tools-item .rdc-btn:hover {
   transform: translateY(-2px);
-  transition: all ease-in-out .3s;
+  transition: all ease-in-out 0.3s;
 }
 
 .tech-tools .recommended-tools .tools-item {
