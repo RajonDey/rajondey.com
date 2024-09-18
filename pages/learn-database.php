@@ -9,7 +9,7 @@ get_header(); ?>
 	
 <section class="learn-section">
 	<div class="container">
-		<div class="row">
+		<div class="row mb-4">
             <div class="col-12 text-start d-lg-none">
                 <div id="list-toggle">
                     <div class="one"></div>
@@ -51,7 +51,7 @@ get_header(); ?>
                         <?php while ($wq->have_posts()) : $wq->the_post(); ?>
                             <div class="tab-pane <?php if ($tab == 0) echo 'active'; ?>" id="exercise-<?php the_ID(); ?>" role="tabpanel">
                                 <?php the_content(); ?> </br>
-                                <?php the_post_thumbnail();?>
+                                <!-- <?php the_post_thumbnail();?> -->
                             </div>
                             <?php $tab++; ?>
                         <?php endwhile; ?>
