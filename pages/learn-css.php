@@ -1,7 +1,7 @@
 <?php /*
 	
 @package rdcircles
-Template name: Learn CSS
+Template name: Learn Database
 
 */
 
@@ -18,7 +18,7 @@ get_header(); ?>
 			    		'post_type' => 'learning',
 			    		'post_status' => 'publish',
 			    		'posts_per_page' => -1,
-			    		'category_name' => 'css',
+			    		'category_name' => 'database',
 			    		'orderby' => 'publish_date',
 			    		'order' => 'ASC',
 			    	)); 
@@ -28,7 +28,7 @@ get_header(); ?>
 				<div class="col-lg-3 col-md-4">
 				  	<ul class="nav nav-tabs" id="myTab" role="tablist">
                       <?php $link = 0; ?>
-				  	  <h4 class="nav-title"><a href="#">CSS</a></h4>
+				  	  <h4 class="nav-title"><a href="#">Database</a></h4>
 				  	  <?php if ($wq->have_posts()) : ?><?php while ($wq->have_posts()) : $wq->the_post(); ?>	
 						  <li class="nav-item">
 						    <a class="nav-link <?php if ($link == 0) echo 'active'; ?>" data-toggle="tab" href="#exercise-<?php the_ID(); ?>" role="tab"><?php the_title(); ?></a>

@@ -13373,6 +13373,7 @@ pre.EnlighterJSRAW {
 
 /* Style for Wp Code Editor */
 /* Prism.js Styles */
+pre.highlight.plaintext,
 pre.wp-block-code {
   position: relative;
   margin: 1em 0;
@@ -13385,6 +13386,7 @@ pre.wp-block-code {
   overflow: auto;
 }
 
+pre.highlight.plaintext code,
 pre.wp-block-code code {
   font-family: inherit;
   font-size: inherit;

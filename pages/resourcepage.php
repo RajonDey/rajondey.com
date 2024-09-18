@@ -16,7 +16,7 @@ get_header(); ?>
             
 			<div class="row page-banner align-items-center">
 				<div class="col-md-7 align-items-center">
-					<p>At RDC, I only recommend resources that I’ve either created or use personally. There’s no hype or fluff here, just the very best stuff that I’ve found to be essential in life.</p>
+					<p>Welcome to my handpicked collection of life-changing resources. I only recommend items that I've personally created or use regularly. There's no hype or fluff here—just the very best tools, knowledge, and gear that I've found to be essential in my journey towards success and personal growth.</p>
 				</div>
 			</div>
 
@@ -30,7 +30,7 @@ get_header(); ?>
 
 			<div class="page-section row">
                 <div class="col-md-12 item">
-                    <h2 class="section-title">🎬 Course</h2>
+                    <h2 class="section-title">🎬 Courses</h2>
 					<p>I like to do online courses frequently. As I believe, almost everything we want to learn exists online. Online courses are one of the best sources to get quick & structured learning, obviously if you can pick the best one. I've done a few cool and outstanding courses which I happily recommend to anyone with the same interest.</p>
                     <a class="btn rdc-btn" href="/resources/course/">Checkout all Courses</a>
                 </div>
