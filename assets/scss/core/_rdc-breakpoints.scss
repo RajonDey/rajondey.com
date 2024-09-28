@@ -20,9 +20,14 @@ $grid-breakpoints: (
     display: none;
   }
 }
-@include media-breakpoint-up(md) {
-  .hide-lg {
-    display: none !important;
+@include media-breakpoint-down(lg) {
+  .hide-mob {
+    display: none;
+  }
+}
+@include media-breakpoint-up(lg) {
+  .hide-desktop {
+    display: none;
   }
 }
 @include media-breakpoint-down(md) {

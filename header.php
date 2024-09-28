@@ -93,11 +93,13 @@
 
                         <!-- Search Form -->
                         <div class="d-flex align-items-center">
-                           <form role="search" method="get" class="search" action="<?php echo esc_url(home_url('/')); ?>">
+                           <form role="search" method="get" class="search hide-mob" action="<?php echo esc_url(home_url('/')); ?>">
                                 <input class="inputsearch" type="search" placeholder="Hit enter to search!" aria-label="Search" name="s" title="Search for">
                                 <span type="submit" class="rdcircles-icon rdcircles-search"></span>
                                 <input type="hidden" name="post_type" value="post"> 
                             </form>
+
+                            <i class="hide-desktop">Playing Life, Creating Moments.</i>
                             
                             <a class="js-toggleSidebar sidebar-open">
                                 <div class="sidebar-open-icon">

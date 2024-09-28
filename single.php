@@ -10,7 +10,7 @@ get_header(); ?>
 	<div class="container">
 		<div class="row justify-content-center rdcircles-single-post">
 			
-			<div class="col-md-8">
+			<div class="col-md-11 col-lg-9 col-xl-8">
 			
 				<?php 
 					

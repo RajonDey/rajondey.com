@@ -603,6 +603,10 @@
   border-right: 0;
   padding: 15px 0px;
   margin-top: 20px;
+  display: flex;
+  @include media-breakpoint-down(md) {
+    display: block;
+  }
   .branding-box {
     padding: 30px;
     border-radius: 6px;

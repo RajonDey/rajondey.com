@@ -106,6 +106,9 @@ body.no-scroll .footer {
   left: auto;
   right: 20px;
   top: 20px;
+  @include media-breakpoint-down(lg) {
+    top: 15px;
+  }
   font-size: 10px;
   z-index: 8;
 }

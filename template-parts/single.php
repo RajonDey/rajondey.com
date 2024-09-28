@@ -22,7 +22,7 @@
     </div>
     
     <!-- Branding Box -->
-    <Div class="d-flex brand-boxes">
+    <Div class="brand-boxes">
         <div class="branding-box flex-2">
             <h3>About Me</h3>
             <p>Hello and thanks for visiting! My name is Rajon Dey, and this is my website and digital space.</p>
@@ -33,6 +33,7 @@
                 <li class="linkedin"><a href="https://www.linkedin.com/in/rajondey/" target="_blank"><i class="bi bi-linkedin"></i></a></li>
             </ul>
         </div>
+        <div class="my-1 hide-desktop"></div>
         <div class="branding-box flex-1">
             <div class="post-details mb-4">
                 <h3>Post Details</h3>
