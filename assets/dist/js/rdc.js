@@ -294,3 +294,32 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   });
 });
+
+// Newsletter Popup Form in Single page
+document.addEventListener("DOMContentLoaded", function () {
+  var popup = document.getElementById("newsletter-popup");
+  var closeButton = document.getElementById("close-popup");
+  var noThanksButton = document.getElementById("no-thanks");
+
+  function showPopup() {
+    popup.style.display = "flex";
+  }
+
+  function hidePopup() {
+    popup.style.display = "none";
+  }
+
+  // Show the newsletter popup after 5 seconds
+  setTimeout(showPopup, 5000);
+
+  // Close popup when close button is clicked
+  closeButton.addEventListener("click", hidePopup);
+  noThanksButton.addEventListener("click", hidePopup);
+
+  // Close popup when clicking outside the content
+  popup.addEventListener("click", function (event) {
+    if (event.target === popup) {
+      hidePopup();
+    }
+  });
+});

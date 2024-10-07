@@ -1,51 +1,49 @@
-jQuery(document).ready( function($){
-	
-    /* 
+jQuery(document).ready(function ($) {
+  /* 
     sidebar functions 
     -----------------------
     */
-    $(document).on('click', '.js-toggleSidebar', function() {
-        $( '.rdcircles-sidebar' ).toggleClass( 'sidebar-closed' );
-        $( 'body' ).toggleClass( 'no-scroll' );
-        $( '.sidebar-overlay' ).fadeToggle( 320 );
-    });
+  $(document).on("click", ".js-toggleSidebar", function () {
+    $(".rdcircles-sidebar").toggleClass("sidebar-closed");
+    $("body").toggleClass("no-scroll");
+    $(".sidebar-overlay").fadeToggle(320);
+  });
 
-    /*
+  /*
     STICKY NAVBAR CODES HERE
     ....................................
     */
-    (function($){
+  (function ($) {
     var prevScrollpos = window.pageYOffset;
-    window.onscroll = function() {
-    var currentScrollPos = window.pageYOffset;
-        if (prevScrollpos > currentScrollPos) {
+    window.onscroll = function () {
+      var currentScrollPos = window.pageYOffset;
+      if (prevScrollpos > currentScrollPos) {
         document.getElementById("sticky-navbar").style.top = "0";
-        document.getElementById("sticky-navbar").classList.remove("sticky-hide");
-        } else {
+        document
+          .getElementById("sticky-navbar")
+          .classList.remove("sticky-hide");
+      } else {
         document.getElementById("sticky-navbar").style.top = "-55px";
-        document.getElementById("sticky-navbar").classList.add("sticky-hide");;
-        }
-        prevScrollpos = currentScrollPos;
-    }
-    
-    $(function(){
-        $(window).scroll(function(e) {
-        if($(this).scrollTop()>300){
-            document.getElementById("sticky-navbar").style.display = "block";
-        }
-        else{
-            document.getElementById("sticky-navbar").style.display = "none";
-    
-        }
-        });
-    });
-    
-    })(jQuery);
+        document.getElementById("sticky-navbar").classList.add("sticky-hide");
+      }
+      prevScrollpos = currentScrollPos;
+    };
 
-    $("#list-toggle").click(function() {
-        $(this).toggleClass("on");
-        $("#myTab").slideToggle();
+    $(function () {
+      $(window).scroll(function (e) {
+        if ($(this).scrollTop() > 300) {
+          document.getElementById("sticky-navbar").style.display = "block";
+        } else {
+          document.getElementById("sticky-navbar").style.display = "none";
+        }
+      });
     });
+  })(jQuery);
+
+  $("#list-toggle").click(function () {
+    $(this).toggleClass("on");
+    $("#myTab").slideToggle();
+  });
 });
 
 /*
@@ -140,3 +138,24 @@ function showSlidesx(n) {
   slidesx[slideIndexx - 1].style.display = "block";
   dots[slideIndexx - 1].className += " active";
 }
+
+// Show the newsletter popup after 5 seconds
+setTimeout(function () {
+  document.getElementById("newsletter-popup").style.display = "flex";
+}, 5000);
+
+// Close popup when close button is clicked
+document.getElementById("close-popup").addEventListener("click", function () {
+  document.getElementById("newsletter-popup").style.display = "none";
+});
+
+// Handle form submission
+document
+  .getElementById("newsletter-form")
+  .addEventListener("submit", function (e) {
+    e.preventDefault();
+    var email = document.getElementById("newsletter-email").value;
+    // Here you would typically send the email to your server or newsletter service
+    console.log("Subscribed:", email);
+    document.getElementById("newsletter-popup").style.display = "none";
+  });

@@ -41,6 +41,9 @@ get_header(); ?>
 		
 		</div>
 	</div>
-		
+	
+	<!-- Newsletter Popup Section -->
+	<?php echo get_template_part( 'template-parts/components/newsletter-popup', 'part' ); ?>
+
 	
 <?php get_footer(); ?>
