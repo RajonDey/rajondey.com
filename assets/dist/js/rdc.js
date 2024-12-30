@@ -307,10 +307,17 @@ document.addEventListener("DOMContentLoaded", function () {
 
   function hidePopup() {
     popup.style.display = "none";
+    // Set a flag in local storage to indicate the user has seen the popup
+    localStorage.setItem('popupShown', 'true');
   }
 
-  // Show the newsletter popup after 5 seconds
-  setTimeout(showPopup, 5000);
+  // Check if the popup has been shown before
+  var popupShown = localStorage.getItem('popupShown');
+
+  if (!popupShown) {
+    // Show the newsletter popup after 5 seconds if it hasn't been shown before
+    setTimeout(showPopup, 5000);
+  }
 
   // Close popup when close button is clicked
   closeButton.addEventListener("click", hidePopup);
