@@ -16,9 +16,9 @@ get_header(); ?>
 			<div class="row intro">
 				<div class="col-lg-7">
 					<h1 class="section-title">Hey, I'm Rajon Dey</h1>
-					<h2>Web Developer / <span id="life-role" class="highlight">Life Enthusiast</span> / Aspiring Musician</h2>
+					<h2>Software Engineer / <span id="life-role" class="highlight">Life Enthusiast</span> / Musician</h2>
 
-					<p>I love creating softwares, digital contents, and moments in life!. Welcome to my digital space. Explore web development tips, life hacks, and my journey in tech and beyond.</p>
+					<p>I'm a software engineer, musician, and creator. I love creating software, digital content, and moments in life. Welcome to my digital space. Explore web development tips, life hacks, and my journey in tech and beyond.</p>
 
 					<a href="https://join.rajondey.com/" target="_blank" class="rdc-btn">Join the Journey</a>
 				</div>
@@ -217,9 +217,9 @@ get_header(); ?>
 					<h2 class="section-title">My Story</h2>
 				</div>
 				<div class="col-lg-7 bio">
-					<p>Welcome to my digital playground!, I'm Rajon! I initially pursued a business education but later found my passion in Software Development. My journey started in 2014, and I freelanced until 2019. Then, I ventured into the corporate world with <a href="https://sjinnovation.com/" target="_blank" rel="noopener noreferrer">SJ Innovation Llc</a>, where I currently hold the position of Module Lead in the Frontend Development team.</p>
+					<p>Welcome to my digital playground!, I'm Rajon! I'm a software engineer, a musician, and a creator. I earned a BBA from Leading University (2013–2017). I've been a software engineer at <a href="https://sjinnovation.com/" target="_blank" rel="noopener noreferrer">SJ Innovation</a> since 2019. Professional details are on <a href="https://portfolio.rajondey.com/" target="_blank" rel="noopener noreferrer">my portfolio</a>.</p>
 					
-					<p>As a Software Developer, my passion is crafting smart, meaningful, and professional websites that enhance the online presence of individuals and businesses, making the web a more engaging, effective, and better platform.</p>
+					<p>My passion is crafting smart, meaningful, and professional websites that enhance the online presence of individuals and businesses, making the web a more engaging, effective, and better platform.</p>
 					
 					<p>Beyond coding, I'm also a Digital Creator, crafting content on the internet, an Investor in various sectors, and a passionate Music Lover.</p>
 

@@ -10,8 +10,8 @@ Template name: About page
 get_header(); ?>
 
 <head>
-    <title>About Rajon Dey | Web Developer & Digital Creator</title>
-    <meta name="description" content="Learn more about Rajon Dey, a passionate Web Developer and Digital Creator. Get to know his story, lifestyle, hobbies, and how to get in touch with him.">
+    <title>About Rajon Dey | Software Engineer, Musician & Creator</title>
+    <meta name="description" content="Rajon Dey is a software engineer, musician, and creator. Get to know his story, lifestyle, hobbies, and how to get in touch with him.">
     <meta name="keywords" content="Rajon Dey, Web Development, Personal Development, Health and Wellness, Wealth Empowerment, Happiness Pursuit">
 </head>
 
@@ -26,7 +26,7 @@ get_header(); ?>
                 <div class="col-lg-8 bio">
                     <h1 class="section-title">Hi, I'm Rajon Dey.</h1>
 
-					<p>I'm a Software Developer, my passion is crafting smart, meaningful, and professional websites that enhance the online presence of individuals and businesses, making the web a more engaging, effective, and better platform.</p>
+					<p>I'm a software engineer, a musician, and a creator. My passion is crafting smart, meaningful, and professional websites that enhance the online presence of individuals and businesses, making the web a more engaging, effective, and better platform.</p>
 
 					<p>Beyond coding, I'm also a Digital Creator, crafting content on the internet, an Investor in various sectors, and a passionate Music Lover. I belong to the Music through my most adorable guitar, which I often play with absolute passion. When my intelligence has turned against me, it helps me to calm down and focus on anything with crystal clarity.</p>
 
@@ -41,10 +41,10 @@ get_header(); ?>
             <div class="row story-timeline">
                 <div class="col-md-12">
 					<h2 class="section-title">Story & timeline</h2>
-<p><span class="emoji">👨‍🎓</span> <b>Education & Training:</b> Graduated in Business Administration from Leading University (2017) and completed Web Development training at Sylhet IT Academy.</p>
-<p><span class="emoji">🧑‍💼</span> <b>Career Path:</b> Started coding and freelancing in web development in 2015. Currently serving as Module Lead for the frontend team at SJ Innovation LLC since 2019.</p>
+<p><span class="emoji">👨‍🎓</span> <b>Education & Training:</b> I earned a BBA from Leading University (2013–2017). I completed Web Development training at Sylhet IT Academy.</p>
+<p><span class="emoji">🧑‍💼</span> <b>Career Path:</b> I've been a software engineer at <a href="https://sjinnovation.com/" target="_blank" rel="noopener noreferrer">SJ Innovation</a> since 2019. Professional details are on <a href="https://portfolio.rajondey.com/" target="_blank" rel="noopener noreferrer">my portfolio</a>.</p>
 <p><span class="emoji">🎬</span> <b>Creations:</b> Create diverse digital content—articles, videos, and photos—exploring the realms of web technology, the rhythm of music, and life's essence.</p>
-<p><span class="emoji">🎯</span> <b>Current Focus:</b> Full-time work as Module Lead at SJ Innovation LLC, developing multiple side projects, learning guitar, creating digital content, and curating a biweekly newsletter.</p>
+<p><span class="emoji">🎯</span> <b>Current Focus:</b> Building software at SJ Innovation, developing multiple side projects, learning guitar, creating digital content, and curating a biweekly newsletter.</p>
                 </div>
             </div>
 

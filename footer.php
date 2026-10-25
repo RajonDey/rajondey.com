@@ -15,7 +15,7 @@
 					<img alt="RD Signature" class="rajon-sign" src="<?php echo get_bloginfo( 'template_directory' ); ?>/assets/dist/images/logo/rd.png"></h4>
 					<div class="footer-list">
 						<p>Rajon Dey</p>
-						<p>Front-end Developer</p>
+						<p>Software Engineer, Musician & Creator</p>
 					</div>
 				</div>
 				<div class="col-md-4 single-widget">
