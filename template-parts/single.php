@@ -26,7 +26,7 @@
         <div class="branding-box flex-2">
             <h3>About Me</h3>
             <p>Hello and thanks for visiting! My name is Rajon Dey, and this is my website and digital space.</p>
-            <p>I'm a software developer who loves creating softwares, digital contents, and moments in life!. Explore web development tips, life hacks, and my journey in tech and beyond.</p>
+            <p>I'm a Module Lead at SJ Innovation who loves creating softwares, digital contents, and moments in life!. Explore web development tips, life hacks, and my journey in tech and beyond.</p>
             <ul class="social-list d-flex">
                 <li class="instagram"><a href="https://www.instagram.com/rajjon.dey/" target="_blank"><i class="bi bi-instagram"></i></a></li>
                 <li class="twitter"><a href="https://twitter.com/rajjon_dey" target="_blank"><i class="bi bi-twitter"></i></a></li>

@@ -12,7 +12,7 @@ get_header(); ?>
 	<div class="container portfolios-header pt-5">
 		<div class="row page-banner align-items-center pb-5">
 			<div class="col-md-7 align-items-center">
-				<p>A few highlights of my work as a frontend developer. I'm doing this for the last five years and developed many websites, email templates, and web applications. I would like to share some of my works here:</p>
+				<p>A few highlights of my frontend development work. I've been doing this for 7+ years and have developed many websites, email templates, and web applications. I would like to share some of my works here:</p>
 				<ul>
 					<li>Open-source projects <a href="https://github.com/RajonDey" target="_blank">on GitHub</a>.</li>
 					<li>My pens <a href="https://codepen.io/Rajon" target="_blank">on Codepen</a>.</li>

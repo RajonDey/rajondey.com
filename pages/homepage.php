@@ -16,7 +16,7 @@ get_header(); ?>
 			<div class="row intro">
 				<div class="col-lg-7">
 					<h1 class="section-title">Hey, I'm Rajon Dey</h1>
-					<h2>Web Developer / <span id="life-role" class="highlight">Life Enthusiast</span> / Aspiring Musician</h2>
+					<h2>Module Lead / <span id="life-role" class="highlight">Life Enthusiast</span> / Aspiring Musician</h2>
 
 					<p>I love creating softwares, digital contents, and moments in life!. Welcome to my digital space. Explore web development tips, life hacks, and my journey in tech and beyond.</p>
 
@@ -217,9 +217,9 @@ get_header(); ?>
 					<h2 class="section-title">My Story</h2>
 				</div>
 				<div class="col-lg-7 bio">
-					<p>Welcome to my digital playground!, I'm Rajon! I initially pursued a business education but later found my passion in Software Development. My journey started in 2014, and I freelanced until 2019. Then, I ventured into the corporate world with <a href="https://sjinnovation.com/" target="_blank" rel="noopener noreferrer">SJ Innovation Llc</a>, where I currently hold the position of Module Lead in the Frontend Development team.</p>
+					<p>Welcome to my digital playground!, I'm Rajon! I earned a BBA from Leading University (2013–2017) and found my passion in software development along the way. I freelanced from 2015 to 2018, then joined <a href="https://sjinnovation.com/" target="_blank" rel="noopener noreferrer">SJ Innovation</a> in May 2019 as a Frontend Developer, a role I held through May 2022. I was a Senior Frontend Developer from May 2022 to June 2023 and have led modules since June 2023.</p>
 					
-					<p>As a Software Developer, my passion is crafting smart, meaningful, and professional websites that enhance the online presence of individuals and businesses, making the web a more engaging, effective, and better platform.</p>
+					<p>As a Module Lead, my passion is crafting smart, meaningful, and professional websites that enhance the online presence of individuals and businesses, making the web a more engaging, effective, and better platform.</p>
 					
 					<p>Beyond coding, I'm also a Digital Creator, crafting content on the internet, an Investor in various sectors, and a passionate Music Lover.</p>
 
